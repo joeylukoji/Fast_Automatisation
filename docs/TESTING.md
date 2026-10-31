@@ -6,7 +6,7 @@ cd backend && pip install -r requirements.txt && python -m pytest -q
 ```
 
 ## 2. Résultat vérifié (2026-10-31)
-`10 passed` (dont `test_generate_local_model`)
+`15 passed` (dont CRUD workflows, historique, validation, repli Gemma → local)
 
 | Test | Couvre | Résultat |
 |---|---|---|
@@ -26,6 +26,9 @@ prompt → « Générer » → 3 blocs affichés → « Simuler » → journal �
 Limite : en mode mock, le workflow généré est toujours le même (il ne dépend pas du prompt).
 
 Mode `KERNEL_LLM_LOCAL=1` : prompt conditionnel → 5 blocs avec branches oui/non, simulation réussie ([demo-local-model.png](demo-local-model.png)).
+
+## 3ter. Stack Docker (vérifiée le 2026-10-31)
+`docker compose up` : backend et frontend `healthy` ; via nginx :8080 → santé, génération locale (`llm_gmail`, 0,71), enregistrement d'un workflow conservé après `docker compose restart backend`, route SPA 200, `pytest` dans le conteneur (15 réussis), parcours navigateur complet sans erreur JS, mobile sans débordement horizontal. Image `ollama` (profil `gemma`) **non testée** ici.
 
 ## 3bis. Non exécuté / non vérifié
 - Envoi réel Telegram/Gmail et appel à Gemma 4 réel : **non exécutés** (identifiants/modèle absents).

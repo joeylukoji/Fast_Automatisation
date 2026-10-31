@@ -1,0 +1,53 @@
+# Kernel en local : docker compose up --build  →  http://localhost:8080
+name: kernel
+
+services:
+  backend:
+    build: ./backend
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      # Par défaut : Gemma si configuré, sinon générateur local entraîné (hors-ligne).
+      KERNEL_LLM_FALLBACK: ${KERNEL_LLM_FALLBACK:-local}
+      KERNEL_DB_PATH: /data/kernel.db
+    volumes:
+      - kernel-data:/data
+    ports:
+      - "8000:8000"   # API exposée pour le debug (http://localhost:8000/docs)
+    restart: unless-stopped
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "8080:80"
+    depends_on:
+      backend:
+        condition: service_healthy
+    restart: unless-stopped
+
+  # Gemma 4 auto-hébergé (facultatif) : docker compose --profile gemma up --build
+  # puis, une fois : docker compose exec ollama ollama pull <modèle>   (nom exact à vérifier)
+  # et dans .env : KERNEL_LLM_BASE_URL=http://ollama:11434/v1  KERNEL_LLM_MODEL=<modèle>
+  ollama:
+    image: ollama/ollama:0.6.8
+    profiles: ["gemma"]
+    volumes:
+      - ollama-models:/root/.ollama
+    ports:
+      - "11434:11434"
+    restart: unless-stopped
+
+  # Réentraînement reproductible : docker compose --profile train run --rm trainer
+  trainer:
+    build:
+      context: .
+      dockerfile: experiments/Dockerfile
+    profiles: ["train"]
+    volumes:
+      - ./experiments:/repo/experiments
+      - ./backend:/repo/backend
+
+volumes:
+  kernel-data:
+  ollama-models:
