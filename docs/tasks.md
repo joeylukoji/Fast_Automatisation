@@ -46,7 +46,7 @@ Chemin critique : T0 → F2-A → F3-A → F3-B → INT → DEMO. Parallèles d�
 | F2-C | F2 | Formulaire de paramètres depuis JSON Schema | A7 | F2-B | NodePanel.jsx | NodeCatalogEntry | édition reflétée dans le JSON | ✅ Vérifié en E2E (affichage)  |
 | F3-C | F3/F4 | Journal + confirmation exécution | A7 | F2-B | RunLog.jsx | RunResult | affichage des statuts | ✅ Vérifié en E2E (affichage)  |
 | INT | toutes | Parcours de bout en bout | A9+A10 | tout | README.md | — | prompt → simulation en mode mock dans le navigateur | ✅ Vérifié (Playwright) |
-| EXP | F1 | Harnais d'évaluation | A8 | F1-C | experiments/** | — | métriques §TESTING | ⬜ Facultatif |
+| EXP | F1 | Générateur local entraîné + harnais d'évaluation | A8 | F1-B | experiments/**, ai/local_model.* | generate() | 0,93 sur test manuel ; test API ; E2E navigateur | ✅ Vérifié |
 
 ## 5. Règles de conflit
 Un propriétaire par fichier ; `main.py` est partagé A6a/A8 → A8 propose, A6a fusionne. `schemas.py` ne change que via A1 avec annonce. Une branche par tâche, petites PR, `pytest` vert avant fusion.

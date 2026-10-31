@@ -6,7 +6,7 @@ cd backend && pip install -r requirements.txt && python -m pytest -q
 ```
 
 ## 2. Résultat vérifié (2026-10-31)
-`9 passed in 0.88s`
+`10 passed` (dont `test_generate_local_model`)
 
 | Test | Couvre | Résultat |
 |---|---|---|
@@ -25,10 +25,14 @@ Backend `KERNEL_LLM_MOCK=1 uvicorn app.main:app` + `npm run dev`, piloté par Pl
 prompt → « Générer » → 3 blocs affichés → « Simuler » → journal « Simulation — réussie », blocs LLM et Telegram `simulé`, aucune erreur JS. Capture : [demo-screenshot.png](demo-screenshot.png).
 Limite : en mode mock, le workflow généré est toujours le même (il ne dépend pas du prompt).
 
+Mode `KERNEL_LLM_LOCAL=1` : prompt conditionnel → 5 blocs avec branches oui/non, simulation réussie ([demo-local-model.png](demo-local-model.png)).
+
 ## 3bis. Non exécuté / non vérifié
 - Envoi réel Telegram/Gmail et appel à Gemma 4 réel : **non exécutés** (identifiants/modèle absents).
 
-## 4. Protocole d'évaluation (composante scientifique, à faire)
+## 4. Évaluation du générateur local : voir [experiments/evaluation_report.md](../experiments/evaluation_report.md)
+
+## 5. Protocole d'évaluation de Gemma 4 (à faire)
 - **Entrée** : jeu de prompts annotés (`experiments/prompts.jsonl`, séparation dev/test).
 - **Métriques** : validité du schéma (% sans erreur `validate`), exécutabilité (% dry-run `success`), correction sémantique (annotation humaine des blocs attendus), nb moyen de tentatives.
 - **Variable** : `generator.MAX_REPAIRS` ∈ {0, 1, 2} ; baseline = 0 (sortie brute).

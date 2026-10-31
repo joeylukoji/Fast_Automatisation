@@ -1,0 +1,20 @@
+# Configuration de l'expérience publiée (lue par un humain ; train.py en contient la source exécutable)
+seed: 42
+data:
+  synthetic: data/synthetic.jsonl        # build_dataset.py, seed 42
+  manual_val: data/manual_val.jsonl      # sélection de modèle
+  manual_test: data/manual_test.jsonl    # évaluation finale uniquement
+  split_rule: "formulations 0-3 → train, 4 → val, 5 → test (aucune formulation partagée)"
+features:
+  preprocessor: local_model.normalize    # minuscules, sans accents, URL → URL, e-mail → EMAIL
+  tfidf: {analyzer: char_wb, ngram_range: [2, 5], sublinear_tf: true}   # M1, M4
+  keywords: local_model.KEYWORDS        # M4 : 5 indicateurs × kw_weight
+grid:
+  M1_char_lr: {C: [0.5, 2, 8, 32]}
+  M2_word_lr: {C: [0.5, 2, 8, 32], ngram_range: [1, 2]}
+  M3_char_knn: {k: [1, 3], metric: cosine}
+  M4_hybrid: {C: [0.5, 2, 8, 32], kw_weight: [0.5, 1, 2]}
+classifier: {type: LogisticRegression, max_iter: 5000}
+selection: "max(acc_val + acc_manual_val), modèles appris uniquement ; égalités → premier de la grille"
+final_model: {name: M4_hybrid_C0.5_kw1, refit_on: [train, val, manual_val]}
+compute: {device: CPU (4 cœurs), budget: "< 1 min", observed: "≈ 7 s"}

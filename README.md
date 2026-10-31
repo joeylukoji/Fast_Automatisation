@@ -34,6 +34,14 @@ export KERNEL_LLM_MODEL=<nom exact du modèle chez votre fournisseur>   # à vé
 export KERNEL_LLM_API_KEY=...                                          # si nécessaire
 ```
 
+## Générateur local (hors-ligne, sans Gemma)
+
+```bash
+export KERNEL_LLM_LOCAL=1   # classifieur entraîné : le workflow dépend du prompt (14 structures)
+```
+
+Exactitude mesurée : 0,93 sur 42 prompts rédigés à la main (IC 95 % 0,83–1,00). Détails, données et protocole : [`experiments/`](experiments/README.md).
+
 ## Connecteurs
 
 - Telegram : `KERNEL_TELEGRAM_TOKEN` (token du bot).
@@ -54,4 +62,4 @@ export KERNEL_LLM_API_KEY=...                                          # si néc
 
 ## Pour la partie recherche
 
-Un harnais d'évaluation est prévu mais pas encore écrit : jeu de prompts annotés, puis mesure de validité du schéma, d'exécutabilité et de correction sémantique, avec et sans validation/réparation (`generator.MAX_REPAIRS` = 0, 1, 2).
+Pipeline d'entraînement et d'évaluation du générateur local : [`experiments/`](experiments/README.md). L'évaluation de Gemma 4 reste à faire : jeu de prompts annotés, puis mesure de validité du schéma, d'exécutabilité et de correction sémantique, avec et sans validation/réparation (`generator.MAX_REPAIRS` = 0, 1, 2).

@@ -39,7 +39,7 @@ Y = {k: [r["intent"] for r in v] for k, v in data.items()}
 
 # ---------- Baselines ----------
 class Majority:
-    def fit(self, x, y): self.c = max(set(y), key=y.count); return self
+    def fit(self, x, y): self.c = max(sorted(set(y)), key=y.count); return self  # égalités : ordre alphabétique
     def predict(self, x): return [self.c] * len(x)
 
 

@@ -1,0 +1,5 @@
+# Versions utilisées pour les résultats publiés (Python 3.13.18)
+scikit-learn==1.9.1
+scipy==1.18.1
+numpy==2.5.3
+-r ../backend/requirements.txt
