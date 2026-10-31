@@ -1,0 +1,45 @@
+%% C4 — Context, Container et Component (Mermaid flowchart pour compatibilité maximale)
+flowchart TB
+  subgraph Context["C4 · Contexte"]
+    user([Utilisateur])
+    kernel[[Kernel<br/>génère, simule et exécute des workflows]]
+    llm[(LLM Gemma 4<br/>chat completions)]
+    tg[(Telegram Bot API)]
+    gm[(Gmail SMTP)]
+    web[(API HTTP tierces)]
+    user -->|décrit, édite, approuve| kernel
+    kernel -->|prompt → JSON| llm
+    kernel -->|messages| tg
+    kernel -->|e-mails| gm
+    kernel -->|requêtes| web
+  end
+
+  subgraph Containers["C4 · Conteneurs"]
+    spa[SPA React + React Flow<br/>Vite :5173]
+    api[API FastAPI<br/>uvicorn :8000]
+    mem[(RUNS en mémoire)]
+    spa -->|JSON /api/*| api
+    api --> mem
+  end
+
+  subgraph Components["C4 · Composants de l'API"]
+    routes[main.py<br/>routes + garde d'approbation]
+    gen[ai/generator<br/>génération + réparation]
+    llmc[ai/llm<br/>client + mock]
+    eng[engine<br/>validation + exécution]
+    reg[nodes/registry + builtin<br/>6 blocs]
+    con[connectors<br/>telegram, gmail]
+    routes --> gen
+    routes --> eng
+    routes --> reg
+    gen --> eng
+    gen --> llmc
+    gen --> reg
+    eng --> reg
+    reg --> con
+    reg --> llmc
+  end
+
+  kernel -.contient.-> spa
+  kernel -.contient.-> api
+  api -.détail.-> routes

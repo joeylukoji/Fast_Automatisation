@@ -1,0 +1,2 @@
+# ADR-0004 — Simulation par défaut, exécution réelle sur approbation
+**Statut** : accepté. **Contexte** : un workflow généré par un LLM peut déclencher des actions externes non voulues. **Décision** : `dry_run=true` par défaut ; le serveur refuse (400) une exécution réelle sans `approved=true` ; l'UI demande confirmation. **Conséquences** : sécurité démontrable ; une étape de plus pour l'utilisateur.

@@ -1,0 +1,2 @@
+# ADR-0001 — Monolithe modulaire FastAPI + SPA React
+**Statut** : accepté. **Contexte** : 4 h, petite équipe, besoin de tests rapides. **Décision** : un seul processus backend découpé en modules (schemas, nodes, engine, ai, connectors) ; pas de microservices ; ports seulement pour le LLM (injection de `complete`) et les blocs (registre). **Conséquences** : lancement simple, tests sans réseau ; découpe en services possible plus tard au niveau du moteur d'exécution.

@@ -1,0 +1,99 @@
+@startuml Kernel_Classes
+skinparam classAttributeIconSize 0
+title Kernel — diagramme de classes (MVP)
+
+package "Domaine (schemas.py)" {
+  class Workflow {
+    name: str
+    nodes: list[Node]
+    edges: list[Edge]
+  }
+  class Node {
+    id: str
+    type: str
+    params: dict
+  }
+  class Edge {
+    source: str
+    target: str
+    branch: "true"|"false"|None
+  }
+  Workflow "1" *-- "1..*" Node
+  Workflow "1" *-- "0..*" Edge
+  Edge "*" --> "1" Node : source
+  Edge "*" --> "1" Node : target
+}
+
+package "DTO API (schemas.py)" {
+  class GenerateRequest { prompt: str }
+  class GenerateResponse { workflow: Workflow?\n errors: list[str]\n attempts: int }
+  class RunRequest { workflow: Workflow\n dry_run: bool = True\n approved: bool = False\n trigger_payload: dict }
+  class RunResult { run_id: str\n dry_run: bool\n status: success|error\n steps: list[StepResult]\n validation_errors: list[str] }
+  class StepResult { node_id: str\n status: success|error|skipped\n simulated: bool\n output: dict?\n error: str?\n duration_ms: int }
+  RunResult "1" *-- "0..*" StepResult
+  RunRequest --> Workflow
+  GenerateResponse --> Workflow
+}
+
+package "Registre de blocs (nodes/)" {
+  class NodeSpec {
+    type: str
+    title: str
+    params_schema: dict
+    run: Callable
+    side_effect: bool
+    is_trigger: bool
+    branching: bool
+  }
+  class RunContext { dry_run: bool\n trigger_payload: dict }
+  class Registry <<module>> {
+    +register(spec): NodeSpec
+    +get_spec(type): NodeSpec?
+    +catalogue(): list[dict]
+  }
+  Registry "1" o-- "*" NodeSpec
+  NodeSpec ..> RunContext
+}
+
+package "Services métier" {
+  class Engine <<module engine.py>> {
+    +validate(wf): list[str]
+    +run(wf, dry_run, payload): RunResult
+    -_topological_order(wf)
+    +resolve(value, outputs, strict)
+  }
+  class Generator <<module ai/generator.py>> {
+    MAX_REPAIRS = 2
+    +system_prompt(): str
+    +generate(prompt, complete): (Workflow?, errors, attempts)
+  }
+}
+
+package "Adaptateurs" {
+  class LLMClient <<ai/llm.py>> { +complete(messages, json_mode): str }
+  class LLMUnavailable <<exception>>
+  class TelegramConnector { +send_message(chat_id, text) }
+  class GmailConnector { +send_email(to, subject, body) }
+  class FastAPIApp <<main.py>> {
+    RUNS: dict[str, RunResult]
+    GET /api/health
+    GET /api/nodes
+    POST /api/generate
+    POST /api/run
+    GET /api/runs/{id}
+  }
+}
+
+Engine ..> Registry
+Engine ..> Workflow
+Engine ..> RunResult
+Generator ..> Registry : catalogue → prompt
+Generator ..> Engine : validate
+Generator ..> LLMClient : injecté (complete)
+LLMClient ..> LLMUnavailable
+NodeSpec ..> TelegramConnector : telegram_send
+NodeSpec ..> GmailConnector : gmail_send
+FastAPIApp ..> Generator
+FastAPIApp ..> Engine
+FastAPIApp ..> Registry
+@enduml

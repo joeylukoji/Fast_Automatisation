@@ -1,0 +1,68 @@
+@startuml Kernel_Main_Flow
+title Parcours principal : décrire → générer → simuler → approuver → exécuter
+actor Utilisateur as U
+participant "Frontend\n(React Flow)" as FE
+participant "API FastAPI\n(main.py)" as API
+participant "Generator" as GEN
+participant "LLM Gemma 4" as LLM
+participant "Engine" as ENG
+participant "Registre\nde blocs" as REG
+participant "Connecteurs\n(Telegram/Gmail/HTTP)" as EXT
+database "RUNS\n(mémoire)" as DB
+
+U -> FE : saisit le prompt
+FE -> API : POST /api/generate {prompt}
+alt prompt vide
+  API --> FE : 400
+end
+API -> GEN : generate(prompt)
+GEN -> REG : catalogue()
+loop tentative 1..MAX_REPAIRS+1
+  GEN -> LLM : complete(messages, json_mode)
+  alt LLM indisponible
+    LLM --> GEN : LLMUnavailable
+    GEN --> API : exception
+    API --> FE : 503
+  end
+  LLM --> GEN : JSON brut
+  GEN -> ENG : validate(workflow)
+  ENG --> GEN : erreurs[]
+  break erreurs vides
+  end
+  GEN -> GEN : ajoute les erreurs au dialogue (réparation)
+end
+GEN --> API : (workflow | null, erreurs, tentatives)
+API --> FE : 200 GenerateResponse
+FE -> FE : convert → graphe + dagre
+U -> FE : édite les paramètres
+
+U -> FE : « Simuler »
+FE -> API : POST /api/run {workflow, dry_run:true}
+API -> ENG : run(wf, dry_run=true)
+ENG -> ENG : validate + tri topologique
+loop chaque bloc
+  ENG -> REG : get_spec(type)
+  alt side_effect && dry_run
+    ENG -> ENG : StepResult(simulated=true)
+  else
+    ENG -> ENG : spec.run(params résolus)
+  end
+end
+ENG --> API : RunResult
+API -> DB : RUNS[run_id] = result
+API --> FE : RunResult → journal
+
+U -> FE : « Exécuter » + confirmation
+FE -> API : POST /api/run {dry_run:false, approved:true}
+alt approved = false
+  API --> FE : 400 « validation explicite requise »
+end
+API -> ENG : run(wf, dry_run=false)
+ENG -> EXT : appels réels
+alt erreur connecteur
+  EXT --> ENG : exception → step error, arrêt
+end
+ENG --> API : RunResult
+API -> DB : enregistre
+API --> FE : journal
+@enduml
