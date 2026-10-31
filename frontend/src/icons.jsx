@@ -19,6 +19,14 @@ const P = {
   folder: ['M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z'],
   bolt: ['M13 2 3 14h9l-1 8 10-12h-9l1-8z'],
   chevron: ['m6 9 6 6 6-6'],
+  // ERP / bureau
+  trigger_erp_sale: ['M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z', 'M3 6h18', 'M16 10a4 4 0 0 1-8 0'],
+  erp_customer_lookup: ['M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2', 'C9 7 4', 'M22 21v-2a4 4 0 0 0-3-3.87', 'M16 3.13a4 4 0 0 1 0 7.75'],
+  invoice_render: ['M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z', 'M14 2v6h6', 'M16 13H8', 'M16 17H8', 'M10 9H8'],
+  minus: ['M5 12h14'],
+  clock: ['C12 12 10', 'M12 6v6l4 2'],
+  external: ['M15 3h6v6', 'M10 14 21 3', 'M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6'],
+  grid: ['R3 3 7 7 1', 'R14 3 7 7 1', 'R14 14 7 7 1', 'R3 14 7 7 1'],
 };
 
 export default function Icon({ name, size = 18, stroke = 1.5, className }) {

@@ -114,6 +114,7 @@ function Header() {
       <div className="k-header-right">
         {health && <span className="mono muted small" title="Générateur utilisé par le backend">
           {SOURCE[health.generator] ?? 'aucun générateur'}{health.fallback ? ' · secours local' : ''}</span>}
+        <a className="btn ghost" href="#/apps">Applications</a>
         <button className="btn ghost" onClick={newWorkflow}>Nouveau</button>
         <button className="btn ghost" onClick={loadList}><Icon name="folder" size={14} /> Ouvrir</button>
         <button className="btn ghost" onClick={tidy} disabled={!hasNodes}>Ranger</button>

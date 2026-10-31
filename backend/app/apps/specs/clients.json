@@ -1,0 +1,36 @@
+{
+  "app": "clients",
+  "title": "Clients",
+  "shop": {
+    "name": "Kernel Market",
+    "city": "Kinshasa, RDC",
+    "slogan": "Votre dépôt de quartier"
+  },
+  "theme": {
+    "accent": "#9A3412",
+    "background": "#FDFCF8"
+  },
+  "labels": {
+    "field_name": "Nom",
+    "field_email": "Email",
+    "field_phone": "Téléphone",
+    "add_customer": "Ajouter le client",
+    "new_customer": "Nouveau client",
+    "empty": "Aucun client.",
+    "col_name": "Nom",
+    "col_email": "Email",
+    "col_phone": "Téléphone",
+    "col_purchases": "Achats",
+    "col_total": "Total dépensé"
+  },
+  "customer_fields": [
+    {
+      "key": "quartier",
+      "label": "Quartier"
+    }
+  ],
+  "css": [
+    ".app-root { font-family: inherit; }",
+    ".app-root table th { text-transform: uppercase; font-size: 11px; }"
+  ]
+}

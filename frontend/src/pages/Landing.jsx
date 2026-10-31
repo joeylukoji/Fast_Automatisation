@@ -131,7 +131,10 @@ export default function Landing() {
             <button onClick={() => go('blocs')}>Blocs</button>
             <button onClick={() => go('recherche')}>Recherche</button>
           </div>
-          <a href="#/studio" className="pill-btn">Ouvrir le studio</a>
+          <div className="nav-cta">
+            <a href="#/apps" className="nav-apps">Applications</a>
+            <a href="#/studio" className="pill-btn">Ouvrir le studio</a>
+          </div>
         </div>
       </nav>
 

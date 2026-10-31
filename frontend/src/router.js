@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-// Routeur minimal par hash : #/ (accueil) et #/studio (éditeur).
+// Routeur minimal par hash : #/ (accueil), #/studio (éditeur) et #/apps (applications).
 export function useRoute() {
   const read = () => window.location.hash.replace(/^#/, '') || '/';
   const [route, setRoute] = useState(read);

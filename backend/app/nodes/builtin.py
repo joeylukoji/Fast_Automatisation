@@ -152,7 +152,7 @@ register(
 
 # --- Gmail ------------------------------------------------------------------
 def _run_gmail(params: dict, inputs: dict, ctx: RunContext) -> dict:
-    return gmail.send_email(params["to"], params["subject"], params["body"])
+    return gmail.send_email(params["to"], params["subject"], params["body"], params.get("html") or None)
 
 
 register(
@@ -161,7 +161,8 @@ register(
         label="Gmail : envoyer",
         description="Envoie un e-mail depuis le compte Gmail configuré.",
         params_schema=_obj(
-            {"to": _str("Destinataire"), "subject": _str("Objet"), "body": _str("Message")},
+            {"to": _str("Destinataire"), "subject": _str("Objet"), "body": _str("Message"),
+             "html": _str("HTML (facultatif)", "Version HTML : e-mail multipart texte + HTML.")},
             ["to", "subject", "body"],
         ),
         run=_run_gmail,

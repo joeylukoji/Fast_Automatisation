@@ -74,6 +74,17 @@ def complete(messages: list[dict], json_mode: bool = False) -> str:
     return out
 
 
+def _without_system(messages: list[dict]) -> list[dict]:
+    """Gemma n'a pas de rôle « system » (l'API Gemini répond 500) : on le préfixe au premier message user."""
+    system = "\n\n".join(m["content"] for m in messages if m["role"] == "system")
+    rest = [dict(m) for m in messages if m["role"] != "system"]
+    if system and rest and rest[0]["role"] == "user":
+        rest[0]["content"] = f"{system}\n\n{rest[0]['content']}"
+    elif system:
+        rest.insert(0, {"role": "user", "content": system})
+    return rest
+
+
 def _remote(messages: list[dict], json_mode: bool) -> str:
     if os.getenv("KERNEL_LLM_MOCK") == "1":
         return json.dumps(MOCK_WORKFLOW) if json_mode else "[réponse simulée du LLM]"
@@ -87,7 +98,7 @@ def _remote(messages: list[dict], json_mode: bool) -> str:
     headers = {}
     if key := os.getenv("KERNEL_LLM_API_KEY"):
         headers["Authorization"] = f"Bearer {key}"
-    payload: dict = {"model": model, "messages": messages, "temperature": 0.2}
+    payload: dict = {"model": model, "messages": _without_system(messages), "temperature": 0.2}
     if json_mode:
         payload["response_format"] = {"type": "json_object"}
     url = f"{base_url.rstrip('/')}/chat/completions"

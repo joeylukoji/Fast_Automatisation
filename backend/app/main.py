@@ -5,8 +5,9 @@ import os
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 
-from . import engine, store
+from . import engine, erp, store
 from .ai import generator, llm, local_model
+from .apps.router import router as apps_router
 from .ai.llm import LLMUnavailable
 from .nodes import catalogue
 from .schemas import GenerateRequest, GenerateResponse, RunRequest, RunResult, Workflow, WorkflowRecord
@@ -18,6 +19,8 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+app.include_router(erp.router)
+app.include_router(apps_router)
 
 
 @app.get("/api/health")

@@ -1,0 +1,34 @@
+{
+  "app": "ventes",
+  "title": "Ventes",
+  "shop": {
+    "name": "Kernel Market",
+    "city": "Kinshasa, RDC",
+    "slogan": "Votre dépôt de quartier"
+  },
+  "theme": {
+    "accent": "#9A3412",
+    "background": "#FDFCF8"
+  },
+  "labels": {
+    "hint": "Cliquez une vente pour ouvrir sa facture.",
+    "refresh": "Actualiser",
+    "empty": "Aucune vente pour l'instant.",
+    "col_invoice": "Facture",
+    "col_customer": "Client",
+    "col_total_usd": "Total USD",
+    "col_total_cdf": "Total CDF",
+    "col_date": "Date",
+    "col_status": "Statut",
+    "open_tab": "Ouvrir dans un onglet"
+  },
+  "invoice": {
+    "header": "Kernel Market — Kinshasa, RDC",
+    "note": "Merci pour votre achat chez Kernel Market !",
+    "footer": "Marchandise vendue ni reprise ni échangée."
+  },
+  "css": [
+    ".app-root { font-family: inherit; }",
+    ".app-root .os-status-sent { color: #15803D; }"
+  ]
+}

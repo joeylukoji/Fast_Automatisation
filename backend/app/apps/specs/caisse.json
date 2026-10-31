@@ -1,0 +1,65 @@
+{
+  "app": "caisse",
+  "title": "Caisse",
+  "shop": {
+    "name": "Kernel Market",
+    "city": "Kinshasa, RDC",
+    "slogan": "Votre dépôt de quartier"
+  },
+  "theme": {
+    "accent": "#9A3412",
+    "background": "#FDFCF8"
+  },
+  "labels": {
+    "step_customer": "1 · Client",
+    "step_products": "2 · Produits",
+    "step_cart": "3 · Panier",
+    "checkout": "Encaisser",
+    "new_customer": "Nouveau client",
+    "change_customer": "Changer",
+    "search_placeholder": "Rechercher nom, email, téléphone…",
+    "no_customer": "Aucun client trouvé.",
+    "empty_cart": "Panier vide.",
+    "total": "Total",
+    "send_invoice": "Envoyer la facture par email",
+    "choose_customer_hint": "Choisissez un client pour encaisser.",
+    "view_invoice": "Voir la facture",
+    "new_sale": "Nouvelle vente"
+  },
+  "products": [
+    {
+      "name": "Casier Primus 72cl",
+      "unit": "casier",
+      "price_usd": 18
+    },
+    {
+      "name": "Sac de riz 25 kg",
+      "unit": "sac",
+      "price_usd": 32
+    },
+    {
+      "name": "Bidon d'huile 5 L",
+      "unit": "bidon",
+      "price_usd": 9
+    },
+    {
+      "name": "Sac de sucre 10 kg",
+      "unit": "sac",
+      "price_usd": 12
+    },
+    {
+      "name": "Farine de maïs 25 kg",
+      "unit": "sac",
+      "price_usd": 22
+    },
+    {
+      "name": "Pack d'eau 1,5 L x6",
+      "unit": "pack",
+      "price_usd": 3.5
+    }
+  ],
+  "css": [
+    ".app-root { font-family: inherit; }",
+    ".app-root .os-pos-total { font-size: 22px; font-weight: 700; }"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "app": "automatisation",
+  "title": "Automatisation",
+  "shop": {
+    "name": "Kernel Market",
+    "city": "Kinshasa, RDC",
+    "slogan": "Votre dépôt de quartier"
+  },
+  "theme": {
+    "accent": "#9A3412",
+    "background": "#FDFCF8"
+  },
+  "labels": {
+    "lead": "Chaque vente encaissée déclenche les workflows enregistrés contenant le bloc « Nouvelle vente (ERP) » ; s'il n'y en a aucun, le workflow par défaut ci-dessous s'exécute.",
+    "install": "Installer dans le Studio",
+    "open_studio": "Ouvrir dans le Studio"
+  },
+  "css": [
+    ".app-root { font-family: inherit; }",
+    ".app-root .os-flow-step { border-radius: 8px; }"
+  ]
+}

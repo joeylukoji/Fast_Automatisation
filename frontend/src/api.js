@@ -22,4 +22,19 @@ export const api = {
   saveWorkflow: (workflow, id) =>
     id ? request(`/workflows/${id}`, { method: 'PUT', body: JSON.stringify(workflow) }) : post('/workflows', workflow),
   deleteWorkflow: (id) => request(`/workflows/${id}`, { method: 'DELETE' }),
+  // Module ERP (docs/erp-contract.md)
+  customers: () => request('/erp/customers'),
+  createCustomer: (customer) => post('/erp/customers', customer),
+  products: () => request('/erp/products'),
+  sales: () => request('/erp/sales'),
+  createSale: ({ customerId, items, sendInvoice = true }) =>
+    post('/erp/sales', { customer_id: customerId, items, send_invoice: sendInvoice }),
+  invoiceUrl: (id) => `/api/erp/sales/${id}/invoice`,
+  automation: () => request('/erp/automation'),
+  installAutomation: () => post('/erp/automation/install', {}),
+  // Générateur d'applications (docs/app-builder-contract.md)
+  apps: () => request('/apps'),
+  buildApps: (prompt) => post('/apps/build', { prompt }),
+  appBuilds: () => request('/apps/builds'),
+  resetApps: () => post('/apps/reset', {}),
 };
