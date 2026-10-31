@@ -154,9 +154,12 @@ class LocalModel:
 _MODEL: LocalModel | None = None
 
 
-def generate(prompt: str) -> dict:
+def predict(prompt: str) -> tuple[str, float]:
     global _MODEL
     if _MODEL is None:
         _MODEL = LocalModel()
-    intent, _ = _MODEL.predict(prompt)
-    return build_workflow(intent, prompt)
+    return _MODEL.predict(prompt)
+
+
+def generate(prompt: str) -> dict:
+    return build_workflow(predict(prompt)[0], prompt)

@@ -8,9 +8,11 @@ fournisseur exposant ce format. Variables d'environnement :
   KERNEL_LLM_API_KEY    clé si nécessaire
   KERNEL_LLM_MOCK=1     renvoie un workflow d'exemple, sans appeler de modèle (démo hors-ligne)
   KERNEL_LLM_LOCAL=1    générateur local entraîné (ai/local_model.py) : hors-ligne, dépend du prompt
+  KERNEL_LLM_FALLBACK=local  si Gemma n'est pas configuré ou ne répond pas, bascule sur le générateur local
 """
 from __future__ import annotations
 
+import contextvars
 import json
 import os
 
@@ -32,11 +34,46 @@ MOCK_WORKFLOW = {
 }
 
 
+# Générateur réellement utilisé pour la dernière complétion de la requête en cours.
+LAST_SOURCE: contextvars.ContextVar[str | None] = contextvars.ContextVar("LAST_SOURCE", default=None)
+
+
+def mode() -> str | None:
+    """Générateur qui sera utilisé : "local", "mock", "gemma" ou None (rien de configuré)."""
+    if os.getenv("KERNEL_LLM_LOCAL") == "1":
+        return "local"
+    if os.getenv("KERNEL_LLM_MOCK") == "1":
+        return "mock"
+    if os.getenv("KERNEL_LLM_BASE_URL") and os.getenv("KERNEL_LLM_MODEL"):
+        return "gemma"
+    return "local" if os.getenv("KERNEL_LLM_FALLBACK") == "local" else None
+
+
+def _local(messages: list[dict]) -> str:
+    from . import local_model
+    prompt = next((m["content"] for m in messages if m["role"] == "user"), "")
+    return json.dumps(local_model.generate(prompt), ensure_ascii=False)
+
+
 def complete(messages: list[dict], json_mode: bool = False) -> str:
-    if os.getenv("KERNEL_LLM_LOCAL") == "1" and json_mode:
-        from . import local_model
-        prompt = next((m["content"] for m in messages if m["role"] == "user"), "")
-        return json.dumps(local_model.generate(prompt), ensure_ascii=False)
+    current = mode()
+    if current == "local" and json_mode:
+        LAST_SOURCE.set("local")
+        return _local(messages)
+    if current == "gemma" and os.getenv("KERNEL_LLM_FALLBACK") == "local" and json_mode:
+        try:
+            out = _remote(messages, json_mode)
+            LAST_SOURCE.set("gemma")
+            return out
+        except LLMUnavailable:
+            LAST_SOURCE.set("local")
+            return _local(messages)
+    out = _remote(messages, json_mode)
+    LAST_SOURCE.set("mock" if os.getenv("KERNEL_LLM_MOCK") == "1" else "gemma")
+    return out
+
+
+def _remote(messages: list[dict], json_mode: bool) -> str:
     if os.getenv("KERNEL_LLM_MOCK") == "1":
         return json.dumps(MOCK_WORKFLOW) if json_mode else "[réponse simulée du LLM]"
 
@@ -52,7 +89,10 @@ def complete(messages: list[dict], json_mode: bool = False) -> str:
     payload: dict = {"model": model, "messages": messages, "temperature": 0.2}
     if json_mode:
         payload["response_format"] = {"type": "json_object"}
-    resp = httpx.post(f"{base_url.rstrip('/')}/chat/completions", json=payload, headers=headers, timeout=120)
+    try:
+        resp = httpx.post(f"{base_url.rstrip('/')}/chat/completions", json=payload, headers=headers, timeout=120)
+    except httpx.HTTPError as exc:
+        raise LLMUnavailable(f"Fournisseur LLM injoignable : {exc}") from exc
     if resp.status_code >= 400:
         raise LLMUnavailable(f"Le fournisseur LLM a répondu {resp.status_code} : {resp.text[:300]}")
     return resp.json()["choices"][0]["message"]["content"]

@@ -34,6 +34,8 @@ class RunRequest(BaseModel):
     dry_run: bool = True
     approved: bool = False
     trigger_payload: dict[str, Any] = Field(default_factory=dict)
+    # Facultatif : rattache l'exécution à un workflow enregistré (historique).
+    workflow_id: str | None = None
 
 
 class StepResult(BaseModel):
@@ -61,3 +63,15 @@ class GenerateResponse(BaseModel):
     workflow: Workflow | None
     errors: list[str] = Field(default_factory=list)
     attempts: int = 0
+    # Générateur effectivement utilisé : "gemma" | "local" | "mock".
+    source: str | None = None
+    # Générateur local : intention prédite et confiance (probabilité softmax).
+    intent: str | None = None
+    confidence: float | None = None
+
+
+class WorkflowRecord(BaseModel):
+    id: str
+    workflow: Workflow
+    created_at: str
+    updated_at: str
