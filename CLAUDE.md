@@ -11,4 +11,4 @@ Rules:
 
 ## Git
 
-- Après chaque étape terminée : commit + `git push` immédiatement sur la branche de travail.
+- Après chaque étape terminée : commit + `git push` immédiatement directement sur `main`.
