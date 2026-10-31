@@ -91,3 +91,8 @@ Exactitude mesurée : 0,93 sur 42 prompts rédigés à la main (IC 95 % 0,83–1
 ## Pour la partie recherche
 
 Pipeline d'entraînement et d'évaluation du générateur local : [`experiments/`](experiments/README.md). L'évaluation de Gemma 4 reste à faire : jeu de prompts annotés, puis mesure de validité du schéma, d'exécutabilité et de correction sémantique, avec et sans validation/réparation (`generator.MAX_REPAIRS` = 0, 1, 2).
+
+## Licence
+
+Distribué sous licence MIT. Voir [LICENSE](LICENSE).
+
