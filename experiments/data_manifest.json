@@ -1,0 +1,21 @@
+{
+  "files": {
+    "synthetic.jsonl": {
+      "sha256": "7fda50da932521396314982883b08d0d5b432eab576bbc838440e3ffc6d0cafe",
+      "rows": 668
+    },
+    "manual_test.jsonl": {
+      "sha256": "1bedc7f12590e6bf60f6a73f9db7a1ccbc102ff14fb6cd669e7027d993e69ae0",
+      "rows": 42
+    }
+  },
+  "splits": {
+    "train": 560,
+    "val": 54,
+    "test": 54,
+    "manual": 42
+  },
+  "classes": 14,
+  "generator": "experiments/build_dataset.py (seed 42)",
+  "provenance": "Données synthétiques et manuelles rédigées pour ce projet (aucune source externe)."
+}

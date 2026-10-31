@@ -1,0 +1,42 @@
+{"prompt": "Fais-moi un ping sur Telegram avec le texte que je tape", "intent": "telegram", "split": "manual"}
+{"prompt": "Je veux recevoir ce rappel dans Telegram, chat 555555", "intent": "telegram", "split": "manual"}
+{"prompt": "Transmets ma note à mon bot Telegram", "intent": "telegram", "split": "manual"}
+{"prompt": "Mail à paul@boite.fr avec le contenu", "intent": "gmail", "split": "manual"}
+{"prompt": "Envoie ce rappel par courrier électronique à rh@entreprise.com", "intent": "gmail", "split": "manual"}
+{"prompt": "Je veux que ce texte parte dans la boîte de lea@test.org", "intent": "gmail", "split": "manual"}
+{"prompt": "Partage ce message sur Telegram et envoie-le aussi à chef@corp.fr", "intent": "telegram_gmail", "split": "manual"}
+{"prompt": "Telegram + email à admin@site.com pour ce texte", "intent": "telegram_gmail", "split": "manual"}
+{"prompt": "Publie l'annonce sur mon groupe Telegram 777777 et mail-la à tous@asso.fr", "intent": "telegram_gmail", "split": "manual"}
+{"prompt": "Donne-moi les points clés de ce texte", "intent": "llm", "split": "manual"}
+{"prompt": "Reformule ce paragraphe en une phrase", "intent": "llm", "split": "manual"}
+{"prompt": "Utilise l'IA pour résumer ma note", "intent": "llm", "split": "manual"}
+{"prompt": "Résume ce compte rendu et mets le résumé sur Telegram", "intent": "llm_telegram", "split": "manual"}
+{"prompt": "Fais un TL;DR de ce texte et envoie-le dans Telegram", "intent": "llm_telegram", "split": "manual"}
+{"prompt": "L'IA synthétise ma note puis me la pousse sur Telegram", "intent": "llm_telegram", "split": "manual"}
+{"prompt": "Résume ce document et envoie le résumé par mail à boss@corp.fr", "intent": "llm_gmail", "split": "manual"}
+{"prompt": "Synthèse IA de ce texte, puis email à moi@ici.fr", "intent": "llm_gmail", "split": "manual"}
+{"prompt": "Rédige un résumé de ce rapport et mail-le à equipe@x.io", "intent": "llm_gmail", "split": "manual"}
+{"prompt": "Ping https://monapi.dev/health", "intent": "http", "split": "manual"}
+{"prompt": "Fais un appel GET vers https://jsonplaceholder.typicode.com/todos/1", "intent": "http", "split": "manual"}
+{"prompt": "Lis le contenu de la page https://news.site/rss", "intent": "http", "split": "manual"}
+{"prompt": "Récupère https://api.coin.io/btc et envoie le résultat sur Telegram", "intent": "http_telegram", "split": "manual"}
+{"prompt": "Appelle https://meteo.fr/api et poste la réponse dans mon Telegram", "intent": "http_telegram", "split": "manual"}
+{"prompt": "Charge https://site.fr/data puis notifie-moi sur Telegram", "intent": "http_telegram", "split": "manual"}
+{"prompt": "Récupère https://api.coin.io/btc et envoie-le par mail à moi@ici.fr", "intent": "http_gmail", "split": "manual"}
+{"prompt": "Interroge https://meteo.fr/api puis mail le résultat à a@b.fr", "intent": "http_gmail", "split": "manual"}
+{"prompt": "Télécharge https://site.fr/export.csv et envoie-le à compta@x.fr", "intent": "http_gmail", "split": "manual"}
+{"prompt": "Lis l'article https://blog.fr/post, résume-le et envoie le résumé sur Telegram", "intent": "http_llm_telegram", "split": "manual"}
+{"prompt": "Récupère https://news.site/rss, fais-en une synthèse IA et poste-la sur Telegram", "intent": "http_llm_telegram", "split": "manual"}
+{"prompt": "Prends la page https://doc.io, condense-la avec Gemma et envoie sur Telegram", "intent": "http_llm_telegram", "split": "manual"}
+{"prompt": "Lis https://blog.fr/post, résume et mail le résumé à moi@ici.fr", "intent": "http_llm_gmail", "split": "manual"}
+{"prompt": "Récupère https://news.site/rss, synthétise et envoie par e-mail à veille@corp.fr", "intent": "http_llm_gmail", "split": "manual"}
+{"prompt": "Télécharge https://doc.io/page, fais un résumé et expédie-le à prof@univ.fr", "intent": "http_llm_gmail", "split": "manual"}
+{"prompt": "Vérifie https://monsite.fr et alerte-moi sur Telegram si le code est 500", "intent": "http_cond_telegram", "split": "manual"}
+{"prompt": "Si https://api.x.io répond 503, préviens-moi sur Telegram", "intent": "http_cond_telegram", "split": "manual"}
+{"prompt": "Teste https://shop.fr : en cas de 404 envoie une alerte Telegram", "intent": "http_cond_telegram", "split": "manual"}
+{"prompt": "Vérifie https://monsite.fr et envoie un mail à ops@x.fr si le code est 500", "intent": "http_cond_gmail", "split": "manual"}
+{"prompt": "Si https://api.x.io renvoie 503, email à admin@x.io", "intent": "http_cond_gmail", "split": "manual"}
+{"prompt": "Contrôle https://shop.fr et si 404 préviens support@shop.fr par courriel", "intent": "http_cond_gmail", "split": "manual"}
+{"prompt": "Teste https://monsite.fr : si 200 Telegram 'tout va bien', sinon mail à ops@x.fr", "intent": "http_cond_telegram_gmail", "split": "manual"}
+{"prompt": "Appelle https://api.x.io ; quand c'est 200 envoie sur Telegram, autrement préviens admin@x.io par e-mail", "intent": "http_cond_telegram_gmail", "split": "manual"}
+{"prompt": "Vérifie https://shop.fr, code 200 → message Telegram, sinon → courriel à support@shop.fr", "intent": "http_cond_telegram_gmail", "split": "manual"}

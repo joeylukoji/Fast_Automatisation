@@ -1,0 +1,668 @@
+{"prompt": "Déclenche manuellement et envoie un message Telegram avec ce texte", "intent": "telegram", "split": "train"}
+{"prompt": "Quand je clique, préviens-moi sur Telegram avec ce texte", "intent": "telegram", "split": "train"}
+{"prompt": "Au lancement, préviens-moi sur Telegram avec le contenu saisi", "intent": "telegram", "split": "train"}
+{"prompt": "Au lancement, notifie le groupe telegram 123456 avec le message reçu", "intent": "telegram", "split": "train"}
+{"prompt": "poste sur le canal Telegram 424242 avec le contenu saisi", "intent": "telegram", "split": "train"}
+{"prompt": "préviens-moi sur Telegram avec le message reçu", "intent": "telegram", "split": "train"}
+{"prompt": "Quand je clique, préviens-moi sur Telegram avec le contenu saisi", "intent": "telegram", "split": "train"}
+{"prompt": "notifie le groupe telegram 123456 avec ce texte", "intent": "telegram", "split": "train"}
+{"prompt": "Au lancement, envoie un message Telegram avec le contenu saisi", "intent": "telegram", "split": "train"}
+{"prompt": "Au lancement, notifie le groupe telegram 424242 avec le message reçu", "intent": "telegram", "split": "train"}
+{"prompt": "Quand je clique, poste sur le canal Telegram 424242 avec ce texte", "intent": "telegram", "split": "train"}
+{"prompt": "Quand je clique, envoie un message Telegram avec le message reçu", "intent": "telegram", "split": "train"}
+{"prompt": "Quand je clique, notifie le groupe telegram 123456 avec ce texte", "intent": "telegram", "split": "train"}
+{"prompt": "Quand je clique, préviens-moi sur Telegram avec mon texte", "intent": "telegram", "split": "train"}
+{"prompt": "Déclenche manuellement et préviens-moi sur Telegram avec le contenu saisi", "intent": "telegram", "split": "train"}
+{"prompt": "Déclenche manuellement et envoie un message Telegram avec le message reçu", "intent": "telegram", "split": "train"}
+{"prompt": "Quand je clique, notifie le groupe telegram -100987654 avec ce texte", "intent": "telegram", "split": "train"}
+{"prompt": "préviens-moi sur Telegram avec ce texte", "intent": "telegram", "split": "train"}
+{"prompt": "Quand je clique, envoie un message Telegram avec ce texte", "intent": "telegram", "split": "train"}
+{"prompt": "Au lancement, poste sur le canal Telegram 123456 avec le message reçu", "intent": "telegram", "split": "train"}
+{"prompt": "Quand je clique, notifie le groupe telegram 123456 avec ce texte", "intent": "telegram", "split": "train"}
+{"prompt": "Quand je clique, poste sur le canal Telegram 424242 avec ce texte", "intent": "telegram", "split": "train"}
+{"prompt": "Au lancement, poste sur le canal Telegram -100987654 avec mon texte", "intent": "telegram", "split": "train"}
+{"prompt": "poste sur le canal Telegram 424242 avec le message reçu", "intent": "telegram", "split": "train"}
+{"prompt": "Quand je clique, notifie le groupe telegram 424242 avec le message reçu", "intent": "telegram", "split": "train"}
+{"prompt": "Déclenche manuellement et préviens-moi sur Telegram avec le contenu saisi", "intent": "telegram", "split": "train"}
+{"prompt": "Quand je clique, notifie le groupe telegram 424242 avec le contenu saisi", "intent": "telegram", "split": "train"}
+{"prompt": "notifie le groupe telegram 123456 avec le contenu saisi", "intent": "telegram", "split": "train"}
+{"prompt": "Quand je clique, envoie un message Telegram avec mon texte", "intent": "telegram", "split": "train"}
+{"prompt": "Au lancement, envoie un message Telegram avec ce texte", "intent": "telegram", "split": "train"}
+{"prompt": "Déclenche manuellement et notifie le groupe telegram -100987654 avec le contenu saisi", "intent": "telegram", "split": "train"}
+{"prompt": "notifie le groupe telegram 424242 avec le message reçu", "intent": "telegram", "split": "train"}
+{"prompt": "Quand je clique, envoie un message Telegram avec ce texte", "intent": "telegram", "split": "train"}
+{"prompt": "notifie le groupe telegram 123456 avec ce texte", "intent": "telegram", "split": "train"}
+{"prompt": "Déclenche manuellement et envoie un message Telegram avec mon texte", "intent": "telegram", "split": "train"}
+{"prompt": "notifie le groupe telegram -100987654 avec mon texte", "intent": "telegram", "split": "train"}
+{"prompt": "poste sur le canal Telegram -100987654 avec le message reçu", "intent": "telegram", "split": "train"}
+{"prompt": "Au lancement, préviens-moi sur Telegram avec mon texte", "intent": "telegram", "split": "train"}
+{"prompt": "Quand je clique, préviens-moi sur Telegram avec mon texte", "intent": "telegram", "split": "train"}
+{"prompt": "préviens-moi sur Telegram avec le contenu saisi", "intent": "telegram", "split": "train"}
+{"prompt": "Quand je clique, préviens alice@exemple.fr par mail avec ce texte", "intent": "gmail", "split": "train"}
+{"prompt": "notifie equipe@startup.io par Gmail avec le contenu saisi", "intent": "gmail", "split": "train"}
+{"prompt": "Au lancement, préviens moi@gmail.com par mail avec ce texte", "intent": "gmail", "split": "train"}
+{"prompt": "Quand je clique, envoie un e-mail à alice@exemple.fr avec mon texte", "intent": "gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et notifie equipe@startup.io par Gmail avec le contenu saisi", "intent": "gmail", "split": "train"}
+{"prompt": "Au lancement, envoie un e-mail à equipe@startup.io avec le contenu saisi", "intent": "gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et préviens alice@exemple.fr par mail avec mon texte", "intent": "gmail", "split": "train"}
+{"prompt": "Au lancement, notifie moi@gmail.com par Gmail avec mon texte", "intent": "gmail", "split": "train"}
+{"prompt": "Quand je clique, écris un courriel à moi@gmail.com avec le message reçu", "intent": "gmail", "split": "train"}
+{"prompt": "envoie un e-mail à equipe@startup.io avec le contenu saisi", "intent": "gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et préviens alice@exemple.fr par mail avec mon texte", "intent": "gmail", "split": "train"}
+{"prompt": "Quand je clique, envoie un e-mail à alice@exemple.fr avec le message reçu", "intent": "gmail", "split": "train"}
+{"prompt": "préviens alice@exemple.fr par mail avec le contenu saisi", "intent": "gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et envoie un e-mail à moi@gmail.com avec ce texte", "intent": "gmail", "split": "train"}
+{"prompt": "Au lancement, envoie un e-mail à equipe@startup.io avec le message reçu", "intent": "gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et écris un courriel à equipe@startup.io avec le contenu saisi", "intent": "gmail", "split": "train"}
+{"prompt": "Au lancement, écris un courriel à alice@exemple.fr avec le contenu saisi", "intent": "gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et envoie un e-mail à equipe@startup.io avec mon texte", "intent": "gmail", "split": "train"}
+{"prompt": "Quand je clique, écris un courriel à moi@gmail.com avec ce texte", "intent": "gmail", "split": "train"}
+{"prompt": "préviens moi@gmail.com par mail avec ce texte", "intent": "gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et notifie moi@gmail.com par Gmail avec le message reçu", "intent": "gmail", "split": "train"}
+{"prompt": "Quand je clique, notifie equipe@startup.io par Gmail avec le message reçu", "intent": "gmail", "split": "train"}
+{"prompt": "Au lancement, envoie un e-mail à moi@gmail.com avec mon texte", "intent": "gmail", "split": "train"}
+{"prompt": "Au lancement, écris un courriel à moi@gmail.com avec ce texte", "intent": "gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et notifie moi@gmail.com par Gmail avec ce texte", "intent": "gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et envoie un e-mail à moi@gmail.com avec le contenu saisi", "intent": "gmail", "split": "train"}
+{"prompt": "envoie un e-mail à alice@exemple.fr avec ce texte", "intent": "gmail", "split": "train"}
+{"prompt": "Quand je clique, envoie un e-mail à moi@gmail.com avec mon texte", "intent": "gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et préviens equipe@startup.io par mail avec le message reçu", "intent": "gmail", "split": "train"}
+{"prompt": "Au lancement, écris un courriel à equipe@startup.io avec mon texte", "intent": "gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et envoie un e-mail à alice@exemple.fr avec ce texte", "intent": "gmail", "split": "train"}
+{"prompt": "écris un courriel à equipe@startup.io avec le message reçu", "intent": "gmail", "split": "train"}
+{"prompt": "Quand je clique, préviens moi@gmail.com par mail avec le message reçu", "intent": "gmail", "split": "train"}
+{"prompt": "Quand je clique, écris un courriel à moi@gmail.com avec ce texte", "intent": "gmail", "split": "train"}
+{"prompt": "Au lancement, envoie un e-mail à moi@gmail.com avec le contenu saisi", "intent": "gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et notifie alice@exemple.fr par Gmail avec le contenu saisi", "intent": "gmail", "split": "train"}
+{"prompt": "Au lancement, notifie moi@gmail.com par Gmail avec mon texte", "intent": "gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et envoie un e-mail à alice@exemple.fr avec le message reçu", "intent": "gmail", "split": "train"}
+{"prompt": "écris un courriel à moi@gmail.com avec mon texte", "intent": "gmail", "split": "train"}
+{"prompt": "Quand je clique, écris un courriel à alice@exemple.fr avec le message reçu", "intent": "gmail", "split": "train"}
+{"prompt": "préviens-moi sur Telegram et aussi par mail à alice@exemple.fr avec le message reçu", "intent": "telegram_gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et notifie à la fois Telegram et equipe@startup.io avec ce texte", "intent": "telegram_gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et envoie-le sur Telegram et par e-mail à moi@gmail.com avec mon texte", "intent": "telegram_gmail", "split": "train"}
+{"prompt": "Au lancement, envoie-le sur Telegram et par e-mail à moi@gmail.com avec le contenu saisi", "intent": "telegram_gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et envoie-le sur Telegram et par e-mail à equipe@startup.io avec le message reçu", "intent": "telegram_gmail", "split": "train"}
+{"prompt": "poste sur Telegram puis envoie un courriel à alice@exemple.fr avec mon texte", "intent": "telegram_gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et préviens-moi sur Telegram et aussi par mail à equipe@startup.io avec le contenu saisi", "intent": "telegram_gmail", "split": "train"}
+{"prompt": "Au lancement, préviens-moi sur Telegram et aussi par mail à equipe@startup.io avec le contenu saisi", "intent": "telegram_gmail", "split": "train"}
+{"prompt": "Au lancement, notifie à la fois Telegram et alice@exemple.fr avec le contenu saisi", "intent": "telegram_gmail", "split": "train"}
+{"prompt": "Au lancement, envoie-le sur Telegram et par e-mail à equipe@startup.io avec mon texte", "intent": "telegram_gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et préviens-moi sur Telegram et aussi par mail à moi@gmail.com avec mon texte", "intent": "telegram_gmail", "split": "train"}
+{"prompt": "Au lancement, envoie-le sur Telegram et par e-mail à alice@exemple.fr avec mon texte", "intent": "telegram_gmail", "split": "train"}
+{"prompt": "notifie à la fois Telegram et equipe@startup.io avec le contenu saisi", "intent": "telegram_gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et poste sur Telegram puis envoie un courriel à equipe@startup.io avec ce texte", "intent": "telegram_gmail", "split": "train"}
+{"prompt": "Quand je clique, poste sur Telegram puis envoie un courriel à moi@gmail.com avec le contenu saisi", "intent": "telegram_gmail", "split": "train"}
+{"prompt": "Au lancement, préviens-moi sur Telegram et aussi par mail à equipe@startup.io avec le contenu saisi", "intent": "telegram_gmail", "split": "train"}
+{"prompt": "Au lancement, notifie à la fois Telegram et alice@exemple.fr avec le message reçu", "intent": "telegram_gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et poste sur Telegram puis envoie un courriel à equipe@startup.io avec le message reçu", "intent": "telegram_gmail", "split": "train"}
+{"prompt": "notifie à la fois Telegram et equipe@startup.io avec ce texte", "intent": "telegram_gmail", "split": "train"}
+{"prompt": "envoie-le sur Telegram et par e-mail à alice@exemple.fr avec le message reçu", "intent": "telegram_gmail", "split": "train"}
+{"prompt": "Au lancement, préviens-moi sur Telegram et aussi par mail à equipe@startup.io avec le contenu saisi", "intent": "telegram_gmail", "split": "train"}
+{"prompt": "Au lancement, notifie à la fois Telegram et moi@gmail.com avec le message reçu", "intent": "telegram_gmail", "split": "train"}
+{"prompt": "Quand je clique, poste sur Telegram puis envoie un courriel à moi@gmail.com avec le contenu saisi", "intent": "telegram_gmail", "split": "train"}
+{"prompt": "Quand je clique, notifie à la fois Telegram et alice@exemple.fr avec mon texte", "intent": "telegram_gmail", "split": "train"}
+{"prompt": "Quand je clique, envoie-le sur Telegram et par e-mail à moi@gmail.com avec le message reçu", "intent": "telegram_gmail", "split": "train"}
+{"prompt": "Au lancement, préviens-moi sur Telegram et aussi par mail à alice@exemple.fr avec le message reçu", "intent": "telegram_gmail", "split": "train"}
+{"prompt": "poste sur Telegram puis envoie un courriel à equipe@startup.io avec le contenu saisi", "intent": "telegram_gmail", "split": "train"}
+{"prompt": "envoie-le sur Telegram et par e-mail à equipe@startup.io avec mon texte", "intent": "telegram_gmail", "split": "train"}
+{"prompt": "Quand je clique, poste sur Telegram puis envoie un courriel à equipe@startup.io avec le contenu saisi", "intent": "telegram_gmail", "split": "train"}
+{"prompt": "envoie-le sur Telegram et par e-mail à alice@exemple.fr avec mon texte", "intent": "telegram_gmail", "split": "train"}
+{"prompt": "Quand je clique, envoie-le sur Telegram et par e-mail à moi@gmail.com avec ce texte", "intent": "telegram_gmail", "split": "train"}
+{"prompt": "poste sur Telegram puis envoie un courriel à alice@exemple.fr avec mon texte", "intent": "telegram_gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et notifie à la fois Telegram et equipe@startup.io avec ce texte", "intent": "telegram_gmail", "split": "train"}
+{"prompt": "Au lancement, notifie à la fois Telegram et moi@gmail.com avec ce texte", "intent": "telegram_gmail", "split": "train"}
+{"prompt": "préviens-moi sur Telegram et aussi par mail à alice@exemple.fr avec le message reçu", "intent": "telegram_gmail", "split": "train"}
+{"prompt": "Au lancement, notifie à la fois Telegram et alice@exemple.fr avec ce texte", "intent": "telegram_gmail", "split": "train"}
+{"prompt": "Au lancement, poste sur Telegram puis envoie un courriel à moi@gmail.com avec le contenu saisi", "intent": "telegram_gmail", "split": "train"}
+{"prompt": "Au lancement, notifie à la fois Telegram et moi@gmail.com avec le contenu saisi", "intent": "telegram_gmail", "split": "train"}
+{"prompt": "notifie à la fois Telegram et moi@gmail.com avec le contenu saisi", "intent": "telegram_gmail", "split": "train"}
+{"prompt": "Quand je clique, envoie-le sur Telegram et par e-mail à equipe@startup.io avec ce texte", "intent": "telegram_gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et synthétise le contenu saisi", "intent": "llm", "split": "train"}
+{"prompt": "Déclenche manuellement et demande à Gemma de résumer le contenu saisi", "intent": "llm", "split": "train"}
+{"prompt": "Au lancement, résume ce texte", "intent": "llm", "split": "train"}
+{"prompt": "Quand je clique, synthétise le message reçu", "intent": "llm", "split": "train"}
+{"prompt": "Déclenche manuellement et résume mon texte", "intent": "llm", "split": "train"}
+{"prompt": "fais un résumé de ce texte", "intent": "llm", "split": "train"}
+{"prompt": "Quand je clique, synthétise le contenu saisi", "intent": "llm", "split": "train"}
+{"prompt": "Au lancement, synthétise ce texte", "intent": "llm", "split": "train"}
+{"prompt": "demande à Gemma de résumer mon texte", "intent": "llm", "split": "train"}
+{"prompt": "résume le message reçu", "intent": "llm", "split": "train"}
+{"prompt": "Déclenche manuellement et synthétise mon texte", "intent": "llm", "split": "train"}
+{"prompt": "Déclenche manuellement et fais un résumé de le contenu saisi", "intent": "llm", "split": "train"}
+{"prompt": "Déclenche manuellement et synthétise ce texte", "intent": "llm", "split": "train"}
+{"prompt": "demande à Gemma de résumer le message reçu", "intent": "llm", "split": "train"}
+{"prompt": "Déclenche manuellement et résume le contenu saisi", "intent": "llm", "split": "train"}
+{"prompt": "Déclenche manuellement et demande à Gemma de résumer le contenu saisi", "intent": "llm", "split": "train"}
+{"prompt": "Quand je clique, demande à Gemma de résumer mon texte", "intent": "llm", "split": "train"}
+{"prompt": "Déclenche manuellement et résume le message reçu", "intent": "llm", "split": "train"}
+{"prompt": "Déclenche manuellement et synthétise le message reçu", "intent": "llm", "split": "train"}
+{"prompt": "Quand je clique, synthétise le contenu saisi", "intent": "llm", "split": "train"}
+{"prompt": "demande à Gemma de résumer le contenu saisi", "intent": "llm", "split": "train"}
+{"prompt": "fais un résumé de le message reçu", "intent": "llm", "split": "train"}
+{"prompt": "demande à Gemma de résumer le message reçu", "intent": "llm", "split": "train"}
+{"prompt": "synthétise le message reçu", "intent": "llm", "split": "train"}
+{"prompt": "Au lancement, synthétise ce texte", "intent": "llm", "split": "train"}
+{"prompt": "Au lancement, fais un résumé de mon texte", "intent": "llm", "split": "train"}
+{"prompt": "demande à Gemma de résumer mon texte", "intent": "llm", "split": "train"}
+{"prompt": "Au lancement, demande à Gemma de résumer le contenu saisi", "intent": "llm", "split": "train"}
+{"prompt": "Quand je clique, fais un résumé de mon texte", "intent": "llm", "split": "train"}
+{"prompt": "Au lancement, résume le message reçu", "intent": "llm", "split": "train"}
+{"prompt": "résume mon texte", "intent": "llm", "split": "train"}
+{"prompt": "fais un résumé de le contenu saisi", "intent": "llm", "split": "train"}
+{"prompt": "Déclenche manuellement et fais un résumé de mon texte", "intent": "llm", "split": "train"}
+{"prompt": "Au lancement, demande à Gemma de résumer ce texte", "intent": "llm", "split": "train"}
+{"prompt": "demande à Gemma de résumer le message reçu", "intent": "llm", "split": "train"}
+{"prompt": "résume le message reçu", "intent": "llm", "split": "train"}
+{"prompt": "Quand je clique, fais un résumé de le contenu saisi", "intent": "llm", "split": "train"}
+{"prompt": "Déclenche manuellement et demande à Gemma de résumer le contenu saisi", "intent": "llm", "split": "train"}
+{"prompt": "Déclenche manuellement et fais un résumé de ce texte", "intent": "llm", "split": "train"}
+{"prompt": "Déclenche manuellement et demande à Gemma de résumer mon texte", "intent": "llm", "split": "train"}
+{"prompt": "Déclenche manuellement et demande à Gemma de résumer le contenu saisi puis notifie le groupe telegram 123456", "intent": "llm_telegram", "split": "train"}
+{"prompt": "Déclenche manuellement et synthétise le message reçu puis envoie un message Telegram", "intent": "llm_telegram", "split": "train"}
+{"prompt": "Déclenche manuellement et demande à Gemma de résumer le message reçu puis poste sur le canal Telegram 424242", "intent": "llm_telegram", "split": "train"}
+{"prompt": "Quand je clique, résume ce texte puis envoie un message Telegram", "intent": "llm_telegram", "split": "train"}
+{"prompt": "demande à Gemma de résumer ce texte puis poste sur le canal Telegram -100987654", "intent": "llm_telegram", "split": "train"}
+{"prompt": "Au lancement, résume le contenu saisi puis notifie le groupe telegram 123456", "intent": "llm_telegram", "split": "train"}
+{"prompt": "Déclenche manuellement et fais un résumé de ce texte puis notifie le groupe telegram 424242", "intent": "llm_telegram", "split": "train"}
+{"prompt": "résume ce texte puis envoie un message Telegram", "intent": "llm_telegram", "split": "train"}
+{"prompt": "Quand je clique, synthétise ce texte puis poste sur le canal Telegram -100987654", "intent": "llm_telegram", "split": "train"}
+{"prompt": "Au lancement, demande à Gemma de résumer ce texte puis poste sur le canal Telegram -100987654", "intent": "llm_telegram", "split": "train"}
+{"prompt": "Quand je clique, synthétise mon texte puis envoie un message Telegram", "intent": "llm_telegram", "split": "train"}
+{"prompt": "Quand je clique, synthétise le contenu saisi puis préviens-moi sur Telegram", "intent": "llm_telegram", "split": "train"}
+{"prompt": "Au lancement, résume mon texte puis notifie le groupe telegram 123456", "intent": "llm_telegram", "split": "train"}
+{"prompt": "demande à Gemma de résumer le contenu saisi puis préviens-moi sur Telegram", "intent": "llm_telegram", "split": "train"}
+{"prompt": "Au lancement, fais un résumé de le message reçu puis notifie le groupe telegram -100987654", "intent": "llm_telegram", "split": "train"}
+{"prompt": "Au lancement, synthétise ce texte puis envoie un message Telegram", "intent": "llm_telegram", "split": "train"}
+{"prompt": "Déclenche manuellement et fais un résumé de le contenu saisi puis préviens-moi sur Telegram", "intent": "llm_telegram", "split": "train"}
+{"prompt": "Au lancement, fais un résumé de mon texte puis préviens-moi sur Telegram", "intent": "llm_telegram", "split": "train"}
+{"prompt": "Quand je clique, synthétise le message reçu puis préviens-moi sur Telegram", "intent": "llm_telegram", "split": "train"}
+{"prompt": "Au lancement, demande à Gemma de résumer le message reçu puis notifie le groupe telegram -100987654", "intent": "llm_telegram", "split": "train"}
+{"prompt": "demande à Gemma de résumer ce texte puis envoie un message Telegram", "intent": "llm_telegram", "split": "train"}
+{"prompt": "Au lancement, synthétise ce texte puis préviens-moi sur Telegram", "intent": "llm_telegram", "split": "train"}
+{"prompt": "demande à Gemma de résumer mon texte puis notifie le groupe telegram 123456", "intent": "llm_telegram", "split": "train"}
+{"prompt": "Déclenche manuellement et synthétise le contenu saisi puis préviens-moi sur Telegram", "intent": "llm_telegram", "split": "train"}
+{"prompt": "Quand je clique, résume ce texte puis poste sur le canal Telegram 123456", "intent": "llm_telegram", "split": "train"}
+{"prompt": "Déclenche manuellement et fais un résumé de mon texte puis poste sur le canal Telegram 424242", "intent": "llm_telegram", "split": "train"}
+{"prompt": "résume ce texte puis notifie le groupe telegram -100987654", "intent": "llm_telegram", "split": "train"}
+{"prompt": "Au lancement, demande à Gemma de résumer ce texte puis notifie le groupe telegram 424242", "intent": "llm_telegram", "split": "train"}
+{"prompt": "Quand je clique, synthétise ce texte puis poste sur le canal Telegram 123456", "intent": "llm_telegram", "split": "train"}
+{"prompt": "Déclenche manuellement et demande à Gemma de résumer le message reçu puis notifie le groupe telegram 123456", "intent": "llm_telegram", "split": "train"}
+{"prompt": "Déclenche manuellement et résume mon texte puis notifie le groupe telegram -100987654", "intent": "llm_telegram", "split": "train"}
+{"prompt": "Au lancement, résume ce texte puis notifie le groupe telegram -100987654", "intent": "llm_telegram", "split": "train"}
+{"prompt": "Quand je clique, résume mon texte puis notifie le groupe telegram 424242", "intent": "llm_telegram", "split": "train"}
+{"prompt": "Quand je clique, synthétise ce texte puis poste sur le canal Telegram 424242", "intent": "llm_telegram", "split": "train"}
+{"prompt": "Quand je clique, fais un résumé de le contenu saisi puis notifie le groupe telegram -100987654", "intent": "llm_telegram", "split": "train"}
+{"prompt": "Quand je clique, demande à Gemma de résumer le message reçu puis poste sur le canal Telegram -100987654", "intent": "llm_telegram", "split": "train"}
+{"prompt": "synthétise ce texte puis notifie le groupe telegram 424242", "intent": "llm_telegram", "split": "train"}
+{"prompt": "synthétise le contenu saisi puis poste sur le canal Telegram -100987654", "intent": "llm_telegram", "split": "train"}
+{"prompt": "synthétise le contenu saisi puis notifie le groupe telegram 424242", "intent": "llm_telegram", "split": "train"}
+{"prompt": "Quand je clique, demande à Gemma de résumer le message reçu puis envoie un message Telegram", "intent": "llm_telegram", "split": "train"}
+{"prompt": "Quand je clique, synthétise le contenu saisi puis écris un courriel à moi@gmail.com", "intent": "llm_gmail", "split": "train"}
+{"prompt": "résume ce texte puis préviens alice@exemple.fr par mail", "intent": "llm_gmail", "split": "train"}
+{"prompt": "Au lancement, demande à Gemma de résumer le contenu saisi puis envoie un e-mail à alice@exemple.fr", "intent": "llm_gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et fais un résumé de le message reçu puis envoie un e-mail à alice@exemple.fr", "intent": "llm_gmail", "split": "train"}
+{"prompt": "Au lancement, synthétise le message reçu puis envoie un e-mail à alice@exemple.fr", "intent": "llm_gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et fais un résumé de le message reçu puis écris un courriel à alice@exemple.fr", "intent": "llm_gmail", "split": "train"}
+{"prompt": "Quand je clique, synthétise le contenu saisi puis envoie un e-mail à alice@exemple.fr", "intent": "llm_gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et résume mon texte puis écris un courriel à alice@exemple.fr", "intent": "llm_gmail", "split": "train"}
+{"prompt": "résume mon texte puis envoie un e-mail à moi@gmail.com", "intent": "llm_gmail", "split": "train"}
+{"prompt": "Quand je clique, demande à Gemma de résumer le contenu saisi puis préviens alice@exemple.fr par mail", "intent": "llm_gmail", "split": "train"}
+{"prompt": "Au lancement, synthétise le message reçu puis préviens alice@exemple.fr par mail", "intent": "llm_gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et résume ce texte puis envoie un e-mail à equipe@startup.io", "intent": "llm_gmail", "split": "train"}
+{"prompt": "synthétise le contenu saisi puis notifie alice@exemple.fr par Gmail", "intent": "llm_gmail", "split": "train"}
+{"prompt": "Au lancement, demande à Gemma de résumer le contenu saisi puis préviens moi@gmail.com par mail", "intent": "llm_gmail", "split": "train"}
+{"prompt": "Quand je clique, synthétise mon texte puis préviens alice@exemple.fr par mail", "intent": "llm_gmail", "split": "train"}
+{"prompt": "résume le contenu saisi puis préviens moi@gmail.com par mail", "intent": "llm_gmail", "split": "train"}
+{"prompt": "Au lancement, synthétise mon texte puis envoie un e-mail à moi@gmail.com", "intent": "llm_gmail", "split": "train"}
+{"prompt": "Au lancement, résume le contenu saisi puis notifie equipe@startup.io par Gmail", "intent": "llm_gmail", "split": "train"}
+{"prompt": "Quand je clique, fais un résumé de ce texte puis notifie alice@exemple.fr par Gmail", "intent": "llm_gmail", "split": "train"}
+{"prompt": "Au lancement, synthétise mon texte puis notifie alice@exemple.fr par Gmail", "intent": "llm_gmail", "split": "train"}
+{"prompt": "fais un résumé de mon texte puis préviens equipe@startup.io par mail", "intent": "llm_gmail", "split": "train"}
+{"prompt": "résume ce texte puis notifie alice@exemple.fr par Gmail", "intent": "llm_gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et synthétise le message reçu puis écris un courriel à alice@exemple.fr", "intent": "llm_gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et fais un résumé de ce texte puis notifie alice@exemple.fr par Gmail", "intent": "llm_gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et demande à Gemma de résumer le contenu saisi puis écris un courriel à moi@gmail.com", "intent": "llm_gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et fais un résumé de ce texte puis écris un courriel à equipe@startup.io", "intent": "llm_gmail", "split": "train"}
+{"prompt": "synthétise le message reçu puis écris un courriel à alice@exemple.fr", "intent": "llm_gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et fais un résumé de le message reçu puis préviens alice@exemple.fr par mail", "intent": "llm_gmail", "split": "train"}
+{"prompt": "Quand je clique, synthétise le contenu saisi puis écris un courriel à alice@exemple.fr", "intent": "llm_gmail", "split": "train"}
+{"prompt": "Au lancement, demande à Gemma de résumer le message reçu puis préviens equipe@startup.io par mail", "intent": "llm_gmail", "split": "train"}
+{"prompt": "Au lancement, synthétise ce texte puis préviens equipe@startup.io par mail", "intent": "llm_gmail", "split": "train"}
+{"prompt": "Au lancement, fais un résumé de mon texte puis notifie alice@exemple.fr par Gmail", "intent": "llm_gmail", "split": "train"}
+{"prompt": "Au lancement, synthétise le message reçu puis envoie un e-mail à alice@exemple.fr", "intent": "llm_gmail", "split": "train"}
+{"prompt": "demande à Gemma de résumer le message reçu puis envoie un e-mail à equipe@startup.io", "intent": "llm_gmail", "split": "train"}
+{"prompt": "Au lancement, demande à Gemma de résumer mon texte puis notifie alice@exemple.fr par Gmail", "intent": "llm_gmail", "split": "train"}
+{"prompt": "résume le contenu saisi puis notifie equipe@startup.io par Gmail", "intent": "llm_gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et synthétise le message reçu puis envoie un e-mail à alice@exemple.fr", "intent": "llm_gmail", "split": "train"}
+{"prompt": "synthétise ce texte puis préviens moi@gmail.com par mail", "intent": "llm_gmail", "split": "train"}
+{"prompt": "Quand je clique, résume mon texte puis envoie un e-mail à alice@exemple.fr", "intent": "llm_gmail", "split": "train"}
+{"prompt": "Au lancement, résume mon texte puis envoie un e-mail à moi@gmail.com", "intent": "llm_gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et appelle l'API http://localhost:3000/health", "intent": "http", "split": "train"}
+{"prompt": "Déclenche manuellement et télécharge le contenu de http://localhost:3000/health", "intent": "http", "split": "train"}
+{"prompt": "Déclenche manuellement et fais une requête GET sur https://status.monsite.com", "intent": "http", "split": "train"}
+{"prompt": "Au lancement, fais une requête GET sur https://api.meteo.fr/paris", "intent": "http", "split": "train"}
+{"prompt": "Quand je clique, fais une requête GET sur https://api.meteo.fr/paris", "intent": "http", "split": "train"}
+{"prompt": "Quand je clique, fais une requête GET sur https://example.org/rss", "intent": "http", "split": "train"}
+{"prompt": "récupère la page https://example.org/rss", "intent": "http", "split": "train"}
+{"prompt": "Déclenche manuellement et télécharge le contenu de https://api.meteo.fr/paris", "intent": "http", "split": "train"}
+{"prompt": "Quand je clique, appelle l'API https://api.meteo.fr/paris", "intent": "http", "split": "train"}
+{"prompt": "Au lancement, récupère la page http://localhost:3000/health", "intent": "http", "split": "train"}
+{"prompt": "Au lancement, fais une requête GET sur https://status.monsite.com", "intent": "http", "split": "train"}
+{"prompt": "Quand je clique, appelle l'API https://example.org/rss", "intent": "http", "split": "train"}
+{"prompt": "Au lancement, récupère la page http://localhost:3000/health", "intent": "http", "split": "train"}
+{"prompt": "Au lancement, fais une requête GET sur https://example.org/rss", "intent": "http", "split": "train"}
+{"prompt": "Quand je clique, télécharge le contenu de https://status.monsite.com", "intent": "http", "split": "train"}
+{"prompt": "Déclenche manuellement et télécharge le contenu de https://api.meteo.fr/paris", "intent": "http", "split": "train"}
+{"prompt": "télécharge le contenu de http://localhost:3000/health", "intent": "http", "split": "train"}
+{"prompt": "Au lancement, télécharge le contenu de https://example.org/rss", "intent": "http", "split": "train"}
+{"prompt": "Déclenche manuellement et récupère la page https://example.org/rss", "intent": "http", "split": "train"}
+{"prompt": "fais une requête GET sur http://localhost:3000/health", "intent": "http", "split": "train"}
+{"prompt": "Déclenche manuellement et télécharge le contenu de https://api.meteo.fr/paris", "intent": "http", "split": "train"}
+{"prompt": "Au lancement, fais une requête GET sur https://api.meteo.fr/paris", "intent": "http", "split": "train"}
+{"prompt": "Déclenche manuellement et télécharge le contenu de https://example.org/rss", "intent": "http", "split": "train"}
+{"prompt": "Au lancement, fais une requête GET sur https://status.monsite.com", "intent": "http", "split": "train"}
+{"prompt": "récupère la page http://localhost:3000/health", "intent": "http", "split": "train"}
+{"prompt": "récupère la page https://example.org/rss", "intent": "http", "split": "train"}
+{"prompt": "récupère la page https://api.meteo.fr/paris", "intent": "http", "split": "train"}
+{"prompt": "Quand je clique, appelle l'API https://api.meteo.fr/paris", "intent": "http", "split": "train"}
+{"prompt": "Quand je clique, récupère la page https://api.meteo.fr/paris", "intent": "http", "split": "train"}
+{"prompt": "Quand je clique, télécharge le contenu de https://api.meteo.fr/paris", "intent": "http", "split": "train"}
+{"prompt": "Au lancement, récupère la page http://localhost:3000/health", "intent": "http", "split": "train"}
+{"prompt": "Déclenche manuellement et fais une requête GET sur http://localhost:3000/health", "intent": "http", "split": "train"}
+{"prompt": "Quand je clique, récupère la page http://localhost:3000/health", "intent": "http", "split": "train"}
+{"prompt": "Au lancement, fais une requête GET sur https://example.org/rss", "intent": "http", "split": "train"}
+{"prompt": "fais une requête GET sur https://api.meteo.fr/paris", "intent": "http", "split": "train"}
+{"prompt": "télécharge le contenu de https://status.monsite.com", "intent": "http", "split": "train"}
+{"prompt": "Déclenche manuellement et fais une requête GET sur https://example.org/rss", "intent": "http", "split": "train"}
+{"prompt": "Déclenche manuellement et récupère la page https://example.org/rss", "intent": "http", "split": "train"}
+{"prompt": "fais une requête GET sur https://example.org/rss", "intent": "http", "split": "train"}
+{"prompt": "Au lancement, fais une requête GET sur https://status.monsite.com", "intent": "http", "split": "train"}
+{"prompt": "Déclenche manuellement et récupère la page http://localhost:3000/health puis préviens-moi sur Telegram", "intent": "http_telegram", "split": "train"}
+{"prompt": "fais une requête GET sur http://localhost:3000/health puis notifie le groupe telegram 424242", "intent": "http_telegram", "split": "train"}
+{"prompt": "Quand je clique, fais une requête GET sur https://status.monsite.com puis notifie le groupe telegram 424242", "intent": "http_telegram", "split": "train"}
+{"prompt": "Au lancement, télécharge le contenu de https://api.meteo.fr/paris puis poste sur le canal Telegram 424242", "intent": "http_telegram", "split": "train"}
+{"prompt": "récupère la page https://api.meteo.fr/paris puis notifie le groupe telegram -100987654", "intent": "http_telegram", "split": "train"}
+{"prompt": "Déclenche manuellement et télécharge le contenu de https://api.meteo.fr/paris puis poste sur le canal Telegram 424242", "intent": "http_telegram", "split": "train"}
+{"prompt": "fais une requête GET sur https://api.meteo.fr/paris puis notifie le groupe telegram -100987654", "intent": "http_telegram", "split": "train"}
+{"prompt": "appelle l'API https://status.monsite.com puis notifie le groupe telegram 424242", "intent": "http_telegram", "split": "train"}
+{"prompt": "télécharge le contenu de https://example.org/rss puis notifie le groupe telegram 424242", "intent": "http_telegram", "split": "train"}
+{"prompt": "Au lancement, télécharge le contenu de https://status.monsite.com puis envoie un message Telegram", "intent": "http_telegram", "split": "train"}
+{"prompt": "Au lancement, télécharge le contenu de https://example.org/rss puis préviens-moi sur Telegram", "intent": "http_telegram", "split": "train"}
+{"prompt": "Déclenche manuellement et appelle l'API https://api.meteo.fr/paris puis envoie un message Telegram", "intent": "http_telegram", "split": "train"}
+{"prompt": "récupère la page https://api.meteo.fr/paris puis envoie un message Telegram", "intent": "http_telegram", "split": "train"}
+{"prompt": "Quand je clique, récupère la page https://api.meteo.fr/paris puis envoie un message Telegram", "intent": "http_telegram", "split": "train"}
+{"prompt": "Au lancement, appelle l'API http://localhost:3000/health puis envoie un message Telegram", "intent": "http_telegram", "split": "train"}
+{"prompt": "récupère la page https://example.org/rss puis notifie le groupe telegram 123456", "intent": "http_telegram", "split": "train"}
+{"prompt": "Quand je clique, fais une requête GET sur https://status.monsite.com puis poste sur le canal Telegram 424242", "intent": "http_telegram", "split": "train"}
+{"prompt": "récupère la page http://localhost:3000/health puis poste sur le canal Telegram 424242", "intent": "http_telegram", "split": "train"}
+{"prompt": "Quand je clique, fais une requête GET sur https://example.org/rss puis poste sur le canal Telegram 123456", "intent": "http_telegram", "split": "train"}
+{"prompt": "Déclenche manuellement et récupère la page https://example.org/rss puis envoie un message Telegram", "intent": "http_telegram", "split": "train"}
+{"prompt": "Au lancement, télécharge le contenu de https://status.monsite.com puis envoie un message Telegram", "intent": "http_telegram", "split": "train"}
+{"prompt": "Au lancement, télécharge le contenu de https://example.org/rss puis poste sur le canal Telegram 424242", "intent": "http_telegram", "split": "train"}
+{"prompt": "télécharge le contenu de https://example.org/rss puis notifie le groupe telegram 424242", "intent": "http_telegram", "split": "train"}
+{"prompt": "Au lancement, récupère la page http://localhost:3000/health puis poste sur le canal Telegram 123456", "intent": "http_telegram", "split": "train"}
+{"prompt": "fais une requête GET sur https://status.monsite.com puis notifie le groupe telegram 424242", "intent": "http_telegram", "split": "train"}
+{"prompt": "Quand je clique, appelle l'API http://localhost:3000/health puis préviens-moi sur Telegram", "intent": "http_telegram", "split": "train"}
+{"prompt": "télécharge le contenu de https://api.meteo.fr/paris puis poste sur le canal Telegram -100987654", "intent": "http_telegram", "split": "train"}
+{"prompt": "Déclenche manuellement et fais une requête GET sur https://status.monsite.com puis poste sur le canal Telegram -100987654", "intent": "http_telegram", "split": "train"}
+{"prompt": "appelle l'API https://example.org/rss puis poste sur le canal Telegram 123456", "intent": "http_telegram", "split": "train"}
+{"prompt": "Déclenche manuellement et fais une requête GET sur http://localhost:3000/health puis préviens-moi sur Telegram", "intent": "http_telegram", "split": "train"}
+{"prompt": "Quand je clique, appelle l'API https://api.meteo.fr/paris puis notifie le groupe telegram -100987654", "intent": "http_telegram", "split": "train"}
+{"prompt": "Quand je clique, appelle l'API https://status.monsite.com puis notifie le groupe telegram 424242", "intent": "http_telegram", "split": "train"}
+{"prompt": "Déclenche manuellement et fais une requête GET sur https://status.monsite.com puis préviens-moi sur Telegram", "intent": "http_telegram", "split": "train"}
+{"prompt": "Déclenche manuellement et fais une requête GET sur https://status.monsite.com puis notifie le groupe telegram 424242", "intent": "http_telegram", "split": "train"}
+{"prompt": "Au lancement, fais une requête GET sur https://api.meteo.fr/paris puis notifie le groupe telegram 123456", "intent": "http_telegram", "split": "train"}
+{"prompt": "fais une requête GET sur https://api.meteo.fr/paris puis notifie le groupe telegram 123456", "intent": "http_telegram", "split": "train"}
+{"prompt": "Au lancement, récupère la page http://localhost:3000/health puis préviens-moi sur Telegram", "intent": "http_telegram", "split": "train"}
+{"prompt": "Au lancement, appelle l'API https://example.org/rss puis notifie le groupe telegram -100987654", "intent": "http_telegram", "split": "train"}
+{"prompt": "récupère la page https://status.monsite.com puis envoie un message Telegram", "intent": "http_telegram", "split": "train"}
+{"prompt": "Au lancement, récupère la page https://api.meteo.fr/paris puis envoie un message Telegram", "intent": "http_telegram", "split": "train"}
+{"prompt": "Au lancement, fais une requête GET sur https://status.monsite.com puis écris un courriel à alice@exemple.fr", "intent": "http_gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et récupère la page https://example.org/rss puis envoie un e-mail à moi@gmail.com", "intent": "http_gmail", "split": "train"}
+{"prompt": "Quand je clique, télécharge le contenu de https://status.monsite.com puis envoie un e-mail à equipe@startup.io", "intent": "http_gmail", "split": "train"}
+{"prompt": "Au lancement, récupère la page https://example.org/rss puis préviens moi@gmail.com par mail", "intent": "http_gmail", "split": "train"}
+{"prompt": "Au lancement, fais une requête GET sur https://api.meteo.fr/paris puis préviens equipe@startup.io par mail", "intent": "http_gmail", "split": "train"}
+{"prompt": "récupère la page http://localhost:3000/health puis écris un courriel à moi@gmail.com", "intent": "http_gmail", "split": "train"}
+{"prompt": "Quand je clique, télécharge le contenu de http://localhost:3000/health puis préviens moi@gmail.com par mail", "intent": "http_gmail", "split": "train"}
+{"prompt": "appelle l'API https://api.meteo.fr/paris puis écris un courriel à alice@exemple.fr", "intent": "http_gmail", "split": "train"}
+{"prompt": "Quand je clique, télécharge le contenu de https://example.org/rss puis envoie un e-mail à equipe@startup.io", "intent": "http_gmail", "split": "train"}
+{"prompt": "télécharge le contenu de http://localhost:3000/health puis notifie equipe@startup.io par Gmail", "intent": "http_gmail", "split": "train"}
+{"prompt": "Au lancement, télécharge le contenu de https://status.monsite.com puis préviens equipe@startup.io par mail", "intent": "http_gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et appelle l'API https://example.org/rss puis préviens equipe@startup.io par mail", "intent": "http_gmail", "split": "train"}
+{"prompt": "Quand je clique, fais une requête GET sur http://localhost:3000/health puis envoie un e-mail à alice@exemple.fr", "intent": "http_gmail", "split": "train"}
+{"prompt": "télécharge le contenu de https://status.monsite.com puis préviens alice@exemple.fr par mail", "intent": "http_gmail", "split": "train"}
+{"prompt": "Au lancement, télécharge le contenu de https://api.meteo.fr/paris puis envoie un e-mail à equipe@startup.io", "intent": "http_gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et télécharge le contenu de https://example.org/rss puis préviens equipe@startup.io par mail", "intent": "http_gmail", "split": "train"}
+{"prompt": "Quand je clique, récupère la page https://example.org/rss puis écris un courriel à equipe@startup.io", "intent": "http_gmail", "split": "train"}
+{"prompt": "Quand je clique, télécharge le contenu de https://api.meteo.fr/paris puis notifie alice@exemple.fr par Gmail", "intent": "http_gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et fais une requête GET sur https://api.meteo.fr/paris puis envoie un e-mail à alice@exemple.fr", "intent": "http_gmail", "split": "train"}
+{"prompt": "Au lancement, fais une requête GET sur http://localhost:3000/health puis écris un courriel à moi@gmail.com", "intent": "http_gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et télécharge le contenu de https://status.monsite.com puis envoie un e-mail à moi@gmail.com", "intent": "http_gmail", "split": "train"}
+{"prompt": "Au lancement, fais une requête GET sur https://example.org/rss puis notifie equipe@startup.io par Gmail", "intent": "http_gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et télécharge le contenu de http://localhost:3000/health puis envoie un e-mail à equipe@startup.io", "intent": "http_gmail", "split": "train"}
+{"prompt": "Quand je clique, appelle l'API https://status.monsite.com puis préviens moi@gmail.com par mail", "intent": "http_gmail", "split": "train"}
+{"prompt": "Au lancement, fais une requête GET sur http://localhost:3000/health puis préviens alice@exemple.fr par mail", "intent": "http_gmail", "split": "train"}
+{"prompt": "Au lancement, fais une requête GET sur https://api.meteo.fr/paris puis écris un courriel à alice@exemple.fr", "intent": "http_gmail", "split": "train"}
+{"prompt": "appelle l'API https://status.monsite.com puis envoie un e-mail à alice@exemple.fr", "intent": "http_gmail", "split": "train"}
+{"prompt": "télécharge le contenu de https://status.monsite.com puis notifie alice@exemple.fr par Gmail", "intent": "http_gmail", "split": "train"}
+{"prompt": "Quand je clique, télécharge le contenu de http://localhost:3000/health puis notifie equipe@startup.io par Gmail", "intent": "http_gmail", "split": "train"}
+{"prompt": "Quand je clique, fais une requête GET sur https://api.meteo.fr/paris puis notifie moi@gmail.com par Gmail", "intent": "http_gmail", "split": "train"}
+{"prompt": "Quand je clique, télécharge le contenu de http://localhost:3000/health puis notifie equipe@startup.io par Gmail", "intent": "http_gmail", "split": "train"}
+{"prompt": "Au lancement, récupère la page https://api.meteo.fr/paris puis envoie un e-mail à alice@exemple.fr", "intent": "http_gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et télécharge le contenu de https://status.monsite.com puis écris un courriel à equipe@startup.io", "intent": "http_gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et télécharge le contenu de http://localhost:3000/health puis préviens moi@gmail.com par mail", "intent": "http_gmail", "split": "train"}
+{"prompt": "Quand je clique, fais une requête GET sur http://localhost:3000/health puis préviens equipe@startup.io par mail", "intent": "http_gmail", "split": "train"}
+{"prompt": "récupère la page http://localhost:3000/health puis envoie un e-mail à alice@exemple.fr", "intent": "http_gmail", "split": "train"}
+{"prompt": "télécharge le contenu de https://status.monsite.com puis écris un courriel à alice@exemple.fr", "intent": "http_gmail", "split": "train"}
+{"prompt": "récupère la page https://example.org/rss puis notifie alice@exemple.fr par Gmail", "intent": "http_gmail", "split": "train"}
+{"prompt": "Au lancement, fais une requête GET sur https://api.meteo.fr/paris puis préviens moi@gmail.com par mail", "intent": "http_gmail", "split": "train"}
+{"prompt": "Quand je clique, récupère la page https://status.monsite.com puis écris un courriel à moi@gmail.com", "intent": "http_gmail", "split": "train"}
+{"prompt": "Quand je clique, fais une requête GET sur http://localhost:3000/health, synthétise le résultat et préviens-moi sur Telegram", "intent": "http_llm_telegram", "split": "train"}
+{"prompt": "Quand je clique, télécharge le contenu de https://status.monsite.com, synthétise le résultat et notifie le groupe telegram 424242", "intent": "http_llm_telegram", "split": "train"}
+{"prompt": "Quand je clique, récupère la page https://example.org/rss, demande à Gemma de résumer le résultat et poste sur le canal Telegram -100987654", "intent": "http_llm_telegram", "split": "train"}
+{"prompt": "Au lancement, appelle l'API https://status.monsite.com, synthétise le résultat et préviens-moi sur Telegram", "intent": "http_llm_telegram", "split": "train"}
+{"prompt": "Au lancement, récupère la page http://localhost:3000/health, synthétise le résultat et préviens-moi sur Telegram", "intent": "http_llm_telegram", "split": "train"}
+{"prompt": "Déclenche manuellement et récupère la page https://api.meteo.fr/paris, résume le résultat et poste sur le canal Telegram 424242", "intent": "http_llm_telegram", "split": "train"}
+{"prompt": "Quand je clique, télécharge le contenu de https://api.meteo.fr/paris, résume le résultat et notifie le groupe telegram 424242", "intent": "http_llm_telegram", "split": "train"}
+{"prompt": "Au lancement, télécharge le contenu de https://api.meteo.fr/paris, demande à Gemma de résumer le résultat et notifie le groupe telegram 424242", "intent": "http_llm_telegram", "split": "train"}
+{"prompt": "Quand je clique, fais une requête GET sur http://localhost:3000/health, demande à Gemma de résumer le résultat et notifie le groupe telegram 424242", "intent": "http_llm_telegram", "split": "train"}
+{"prompt": "Déclenche manuellement et fais une requête GET sur http://localhost:3000/health, synthétise le résultat et préviens-moi sur Telegram", "intent": "http_llm_telegram", "split": "train"}
+{"prompt": "Déclenche manuellement et appelle l'API https://api.meteo.fr/paris, synthétise le résultat et poste sur le canal Telegram 123456", "intent": "http_llm_telegram", "split": "train"}
+{"prompt": "Au lancement, appelle l'API https://api.meteo.fr/paris, résume le résultat et préviens-moi sur Telegram", "intent": "http_llm_telegram", "split": "train"}
+{"prompt": "appelle l'API http://localhost:3000/health, fais un résumé de le résultat et envoie un message Telegram", "intent": "http_llm_telegram", "split": "train"}
+{"prompt": "appelle l'API https://api.meteo.fr/paris, synthétise le résultat et poste sur le canal Telegram 424242", "intent": "http_llm_telegram", "split": "train"}
+{"prompt": "Au lancement, fais une requête GET sur http://localhost:3000/health, synthétise le résultat et poste sur le canal Telegram 424242", "intent": "http_llm_telegram", "split": "train"}
+{"prompt": "Déclenche manuellement et récupère la page http://localhost:3000/health, résume le résultat et préviens-moi sur Telegram", "intent": "http_llm_telegram", "split": "train"}
+{"prompt": "Déclenche manuellement et appelle l'API https://api.meteo.fr/paris, synthétise le résultat et poste sur le canal Telegram -100987654", "intent": "http_llm_telegram", "split": "train"}
+{"prompt": "Quand je clique, récupère la page https://status.monsite.com, fais un résumé de le résultat et préviens-moi sur Telegram", "intent": "http_llm_telegram", "split": "train"}
+{"prompt": "Déclenche manuellement et appelle l'API https://status.monsite.com, fais un résumé de le résultat et notifie le groupe telegram 424242", "intent": "http_llm_telegram", "split": "train"}
+{"prompt": "Déclenche manuellement et télécharge le contenu de http://localhost:3000/health, fais un résumé de le résultat et poste sur le canal Telegram -100987654", "intent": "http_llm_telegram", "split": "train"}
+{"prompt": "Quand je clique, appelle l'API https://status.monsite.com, fais un résumé de le résultat et préviens-moi sur Telegram", "intent": "http_llm_telegram", "split": "train"}
+{"prompt": "Déclenche manuellement et télécharge le contenu de https://status.monsite.com, demande à Gemma de résumer le résultat et envoie un message Telegram", "intent": "http_llm_telegram", "split": "train"}
+{"prompt": "fais une requête GET sur https://status.monsite.com, synthétise le résultat et envoie un message Telegram", "intent": "http_llm_telegram", "split": "train"}
+{"prompt": "Déclenche manuellement et fais une requête GET sur https://api.meteo.fr/paris, demande à Gemma de résumer le résultat et poste sur le canal Telegram 123456", "intent": "http_llm_telegram", "split": "train"}
+{"prompt": "Au lancement, récupère la page http://localhost:3000/health, demande à Gemma de résumer le résultat et notifie le groupe telegram -100987654", "intent": "http_llm_telegram", "split": "train"}
+{"prompt": "récupère la page https://api.meteo.fr/paris, synthétise le résultat et notifie le groupe telegram 424242", "intent": "http_llm_telegram", "split": "train"}
+{"prompt": "Déclenche manuellement et récupère la page https://api.meteo.fr/paris, demande à Gemma de résumer le résultat et notifie le groupe telegram -100987654", "intent": "http_llm_telegram", "split": "train"}
+{"prompt": "Déclenche manuellement et télécharge le contenu de http://localhost:3000/health, demande à Gemma de résumer le résultat et envoie un message Telegram", "intent": "http_llm_telegram", "split": "train"}
+{"prompt": "Déclenche manuellement et récupère la page https://example.org/rss, fais un résumé de le résultat et préviens-moi sur Telegram", "intent": "http_llm_telegram", "split": "train"}
+{"prompt": "récupère la page http://localhost:3000/health, synthétise le résultat et préviens-moi sur Telegram", "intent": "http_llm_telegram", "split": "train"}
+{"prompt": "récupère la page https://status.monsite.com, résume le résultat et notifie le groupe telegram 123456", "intent": "http_llm_telegram", "split": "train"}
+{"prompt": "Déclenche manuellement et télécharge le contenu de https://status.monsite.com, synthétise le résultat et envoie un message Telegram", "intent": "http_llm_telegram", "split": "train"}
+{"prompt": "Déclenche manuellement et récupère la page https://api.meteo.fr/paris, résume le résultat et préviens-moi sur Telegram", "intent": "http_llm_telegram", "split": "train"}
+{"prompt": "Quand je clique, télécharge le contenu de https://api.meteo.fr/paris, résume le résultat et poste sur le canal Telegram 424242", "intent": "http_llm_telegram", "split": "train"}
+{"prompt": "Déclenche manuellement et télécharge le contenu de http://localhost:3000/health, synthétise le résultat et notifie le groupe telegram 424242", "intent": "http_llm_telegram", "split": "train"}
+{"prompt": "Déclenche manuellement et récupère la page http://localhost:3000/health, résume le résultat et poste sur le canal Telegram -100987654", "intent": "http_llm_telegram", "split": "train"}
+{"prompt": "Au lancement, télécharge le contenu de https://api.meteo.fr/paris, synthétise le résultat et préviens-moi sur Telegram", "intent": "http_llm_telegram", "split": "train"}
+{"prompt": "Déclenche manuellement et appelle l'API https://api.meteo.fr/paris, fais un résumé de le résultat et poste sur le canal Telegram 123456", "intent": "http_llm_telegram", "split": "train"}
+{"prompt": "fais une requête GET sur https://status.monsite.com, demande à Gemma de résumer le résultat et préviens-moi sur Telegram", "intent": "http_llm_telegram", "split": "train"}
+{"prompt": "Déclenche manuellement et récupère la page https://status.monsite.com, synthétise le résultat et poste sur le canal Telegram 123456", "intent": "http_llm_telegram", "split": "train"}
+{"prompt": "Déclenche manuellement et récupère la page https://example.org/rss, demande à Gemma de résumer le résultat et envoie un e-mail à alice@exemple.fr", "intent": "http_llm_gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et appelle l'API https://status.monsite.com, résume le résultat et envoie un e-mail à alice@exemple.fr", "intent": "http_llm_gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et appelle l'API https://api.meteo.fr/paris, résume le résultat et écris un courriel à alice@exemple.fr", "intent": "http_llm_gmail", "split": "train"}
+{"prompt": "Quand je clique, récupère la page https://example.org/rss, résume le résultat et écris un courriel à alice@exemple.fr", "intent": "http_llm_gmail", "split": "train"}
+{"prompt": "télécharge le contenu de https://api.meteo.fr/paris, résume le résultat et écris un courriel à moi@gmail.com", "intent": "http_llm_gmail", "split": "train"}
+{"prompt": "appelle l'API https://example.org/rss, synthétise le résultat et écris un courriel à moi@gmail.com", "intent": "http_llm_gmail", "split": "train"}
+{"prompt": "récupère la page http://localhost:3000/health, demande à Gemma de résumer le résultat et préviens equipe@startup.io par mail", "intent": "http_llm_gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et récupère la page https://api.meteo.fr/paris, fais un résumé de le résultat et écris un courriel à equipe@startup.io", "intent": "http_llm_gmail", "split": "train"}
+{"prompt": "Au lancement, télécharge le contenu de https://example.org/rss, fais un résumé de le résultat et préviens equipe@startup.io par mail", "intent": "http_llm_gmail", "split": "train"}
+{"prompt": "Au lancement, fais une requête GET sur https://status.monsite.com, synthétise le résultat et notifie moi@gmail.com par Gmail", "intent": "http_llm_gmail", "split": "train"}
+{"prompt": "Quand je clique, fais une requête GET sur https://status.monsite.com, synthétise le résultat et écris un courriel à equipe@startup.io", "intent": "http_llm_gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et télécharge le contenu de https://api.meteo.fr/paris, demande à Gemma de résumer le résultat et préviens moi@gmail.com par mail", "intent": "http_llm_gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et télécharge le contenu de https://example.org/rss, fais un résumé de le résultat et envoie un e-mail à equipe@startup.io", "intent": "http_llm_gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et appelle l'API http://localhost:3000/health, résume le résultat et préviens alice@exemple.fr par mail", "intent": "http_llm_gmail", "split": "train"}
+{"prompt": "Au lancement, récupère la page https://api.meteo.fr/paris, synthétise le résultat et écris un courriel à equipe@startup.io", "intent": "http_llm_gmail", "split": "train"}
+{"prompt": "Au lancement, récupère la page http://localhost:3000/health, synthétise le résultat et écris un courriel à equipe@startup.io", "intent": "http_llm_gmail", "split": "train"}
+{"prompt": "Quand je clique, appelle l'API https://example.org/rss, fais un résumé de le résultat et préviens moi@gmail.com par mail", "intent": "http_llm_gmail", "split": "train"}
+{"prompt": "Quand je clique, fais une requête GET sur http://localhost:3000/health, fais un résumé de le résultat et envoie un e-mail à equipe@startup.io", "intent": "http_llm_gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et fais une requête GET sur https://api.meteo.fr/paris, demande à Gemma de résumer le résultat et notifie moi@gmail.com par Gmail", "intent": "http_llm_gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et récupère la page https://api.meteo.fr/paris, résume le résultat et notifie alice@exemple.fr par Gmail", "intent": "http_llm_gmail", "split": "train"}
+{"prompt": "Au lancement, fais une requête GET sur https://api.meteo.fr/paris, fais un résumé de le résultat et envoie un e-mail à equipe@startup.io", "intent": "http_llm_gmail", "split": "train"}
+{"prompt": "Au lancement, télécharge le contenu de https://api.meteo.fr/paris, synthétise le résultat et notifie moi@gmail.com par Gmail", "intent": "http_llm_gmail", "split": "train"}
+{"prompt": "Au lancement, fais une requête GET sur https://example.org/rss, synthétise le résultat et écris un courriel à alice@exemple.fr", "intent": "http_llm_gmail", "split": "train"}
+{"prompt": "Quand je clique, appelle l'API https://example.org/rss, résume le résultat et écris un courriel à moi@gmail.com", "intent": "http_llm_gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et appelle l'API https://status.monsite.com, résume le résultat et envoie un e-mail à moi@gmail.com", "intent": "http_llm_gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et récupère la page http://localhost:3000/health, synthétise le résultat et écris un courriel à equipe@startup.io", "intent": "http_llm_gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et appelle l'API http://localhost:3000/health, synthétise le résultat et notifie moi@gmail.com par Gmail", "intent": "http_llm_gmail", "split": "train"}
+{"prompt": "Au lancement, télécharge le contenu de http://localhost:3000/health, synthétise le résultat et écris un courriel à equipe@startup.io", "intent": "http_llm_gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et récupère la page https://api.meteo.fr/paris, synthétise le résultat et écris un courriel à moi@gmail.com", "intent": "http_llm_gmail", "split": "train"}
+{"prompt": "appelle l'API https://status.monsite.com, synthétise le résultat et préviens moi@gmail.com par mail", "intent": "http_llm_gmail", "split": "train"}
+{"prompt": "Au lancement, appelle l'API http://localhost:3000/health, demande à Gemma de résumer le résultat et envoie un e-mail à moi@gmail.com", "intent": "http_llm_gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et appelle l'API http://localhost:3000/health, synthétise le résultat et notifie equipe@startup.io par Gmail", "intent": "http_llm_gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et fais une requête GET sur https://api.meteo.fr/paris, résume le résultat et préviens alice@exemple.fr par mail", "intent": "http_llm_gmail", "split": "train"}
+{"prompt": "Au lancement, récupère la page http://localhost:3000/health, synthétise le résultat et envoie un e-mail à alice@exemple.fr", "intent": "http_llm_gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et appelle l'API http://localhost:3000/health, synthétise le résultat et envoie un e-mail à equipe@startup.io", "intent": "http_llm_gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et récupère la page https://api.meteo.fr/paris, demande à Gemma de résumer le résultat et envoie un e-mail à moi@gmail.com", "intent": "http_llm_gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et télécharge le contenu de https://status.monsite.com, demande à Gemma de résumer le résultat et écris un courriel à equipe@startup.io", "intent": "http_llm_gmail", "split": "train"}
+{"prompt": "Quand je clique, fais une requête GET sur https://api.meteo.fr/paris, résume le résultat et écris un courriel à moi@gmail.com", "intent": "http_llm_gmail", "split": "train"}
+{"prompt": "Au lancement, fais une requête GET sur https://api.meteo.fr/paris, synthétise le résultat et notifie equipe@startup.io par Gmail", "intent": "http_llm_gmail", "split": "train"}
+{"prompt": "Quand je clique, appelle l'API http://localhost:3000/health, demande à Gemma de résumer le résultat et envoie un e-mail à moi@gmail.com", "intent": "http_llm_gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et appelle l'API https://status.monsite.com et si le statut vaut 200, envoie un message Telegram", "intent": "http_cond_telegram", "split": "train"}
+{"prompt": "Au lancement, appelle l'API https://api.meteo.fr/paris et uniquement si le serveur répond 404, envoie un message Telegram", "intent": "http_cond_telegram", "split": "train"}
+{"prompt": "Quand je clique, télécharge le contenu de http://localhost:3000/health et si le statut vaut 500, poste sur le canal Telegram 424242", "intent": "http_cond_telegram", "split": "train"}
+{"prompt": "appelle l'API http://localhost:3000/health et si le statut vaut 200, préviens-moi sur Telegram", "intent": "http_cond_telegram", "split": "train"}
+{"prompt": "Au lancement, fais une requête GET sur http://localhost:3000/health et seulement si la réponse est 404, préviens-moi sur Telegram", "intent": "http_cond_telegram", "split": "train"}
+{"prompt": "Quand je clique, télécharge le contenu de https://status.monsite.com et quand le code HTTP est 200, envoie un message Telegram", "intent": "http_cond_telegram", "split": "train"}
+{"prompt": "Quand je clique, télécharge le contenu de http://localhost:3000/health et si le statut vaut 404, poste sur le canal Telegram 123456", "intent": "http_cond_telegram", "split": "train"}
+{"prompt": "Déclenche manuellement et appelle l'API https://api.meteo.fr/paris et uniquement si le serveur répond 200, envoie un message Telegram", "intent": "http_cond_telegram", "split": "train"}
+{"prompt": "Au lancement, récupère la page http://localhost:3000/health et si le statut vaut 500, préviens-moi sur Telegram", "intent": "http_cond_telegram", "split": "train"}
+{"prompt": "Déclenche manuellement et récupère la page https://status.monsite.com et seulement si la réponse est 503, préviens-moi sur Telegram", "intent": "http_cond_telegram", "split": "train"}
+{"prompt": "Quand je clique, fais une requête GET sur http://localhost:3000/health et seulement si la réponse est 500, envoie un message Telegram", "intent": "http_cond_telegram", "split": "train"}
+{"prompt": "récupère la page http://localhost:3000/health et si le statut vaut 404, poste sur le canal Telegram -100987654", "intent": "http_cond_telegram", "split": "train"}
+{"prompt": "Déclenche manuellement et appelle l'API https://status.monsite.com et seulement si la réponse est 503, poste sur le canal Telegram -100987654", "intent": "http_cond_telegram", "split": "train"}
+{"prompt": "Quand je clique, appelle l'API https://api.meteo.fr/paris et quand le code HTTP est 200, poste sur le canal Telegram 123456", "intent": "http_cond_telegram", "split": "train"}
+{"prompt": "Quand je clique, fais une requête GET sur https://api.meteo.fr/paris et si le statut vaut 503, notifie le groupe telegram 123456", "intent": "http_cond_telegram", "split": "train"}
+{"prompt": "Au lancement, appelle l'API https://status.monsite.com et si le statut vaut 200, préviens-moi sur Telegram", "intent": "http_cond_telegram", "split": "train"}
+{"prompt": "appelle l'API http://localhost:3000/health et quand le code HTTP est 200, notifie le groupe telegram -100987654", "intent": "http_cond_telegram", "split": "train"}
+{"prompt": "récupère la page https://api.meteo.fr/paris et quand le code HTTP est 503, poste sur le canal Telegram -100987654", "intent": "http_cond_telegram", "split": "train"}
+{"prompt": "Quand je clique, récupère la page https://api.meteo.fr/paris et seulement si la réponse est 404, envoie un message Telegram", "intent": "http_cond_telegram", "split": "train"}
+{"prompt": "Au lancement, fais une requête GET sur https://example.org/rss et quand le code HTTP est 200, préviens-moi sur Telegram", "intent": "http_cond_telegram", "split": "train"}
+{"prompt": "récupère la page http://localhost:3000/health et seulement si la réponse est 200, notifie le groupe telegram -100987654", "intent": "http_cond_telegram", "split": "train"}
+{"prompt": "appelle l'API https://example.org/rss et uniquement si le serveur répond 404, envoie un message Telegram", "intent": "http_cond_telegram", "split": "train"}
+{"prompt": "récupère la page https://status.monsite.com et quand le code HTTP est 500, notifie le groupe telegram 424242", "intent": "http_cond_telegram", "split": "train"}
+{"prompt": "Au lancement, fais une requête GET sur https://status.monsite.com et uniquement si le serveur répond 503, notifie le groupe telegram 123456", "intent": "http_cond_telegram", "split": "train"}
+{"prompt": "Quand je clique, télécharge le contenu de https://example.org/rss et quand le code HTTP est 404, poste sur le canal Telegram 123456", "intent": "http_cond_telegram", "split": "train"}
+{"prompt": "Au lancement, télécharge le contenu de https://status.monsite.com et seulement si la réponse est 200, préviens-moi sur Telegram", "intent": "http_cond_telegram", "split": "train"}
+{"prompt": "fais une requête GET sur http://localhost:3000/health et seulement si la réponse est 503, poste sur le canal Telegram 123456", "intent": "http_cond_telegram", "split": "train"}
+{"prompt": "Déclenche manuellement et télécharge le contenu de https://example.org/rss et uniquement si le serveur répond 503, poste sur le canal Telegram 123456", "intent": "http_cond_telegram", "split": "train"}
+{"prompt": "Au lancement, récupère la page https://api.meteo.fr/paris et uniquement si le serveur répond 404, envoie un message Telegram", "intent": "http_cond_telegram", "split": "train"}
+{"prompt": "Quand je clique, récupère la page http://localhost:3000/health et uniquement si le serveur répond 200, préviens-moi sur Telegram", "intent": "http_cond_telegram", "split": "train"}
+{"prompt": "Au lancement, télécharge le contenu de https://example.org/rss et uniquement si le serveur répond 503, poste sur le canal Telegram -100987654", "intent": "http_cond_telegram", "split": "train"}
+{"prompt": "Déclenche manuellement et fais une requête GET sur https://status.monsite.com et quand le code HTTP est 200, envoie un message Telegram", "intent": "http_cond_telegram", "split": "train"}
+{"prompt": "télécharge le contenu de http://localhost:3000/health et si le statut vaut 503, préviens-moi sur Telegram", "intent": "http_cond_telegram", "split": "train"}
+{"prompt": "appelle l'API https://example.org/rss et uniquement si le serveur répond 503, préviens-moi sur Telegram", "intent": "http_cond_telegram", "split": "train"}
+{"prompt": "appelle l'API https://example.org/rss et quand le code HTTP est 503, notifie le groupe telegram 123456", "intent": "http_cond_telegram", "split": "train"}
+{"prompt": "Déclenche manuellement et fais une requête GET sur https://example.org/rss et si le statut vaut 503, préviens-moi sur Telegram", "intent": "http_cond_telegram", "split": "train"}
+{"prompt": "Déclenche manuellement et appelle l'API https://status.monsite.com et si le statut vaut 200, envoie un message Telegram", "intent": "http_cond_telegram", "split": "train"}
+{"prompt": "Quand je clique, récupère la page https://status.monsite.com et quand le code HTTP est 404, poste sur le canal Telegram 424242", "intent": "http_cond_telegram", "split": "train"}
+{"prompt": "télécharge le contenu de https://status.monsite.com et si le statut vaut 500, poste sur le canal Telegram -100987654", "intent": "http_cond_telegram", "split": "train"}
+{"prompt": "Quand je clique, récupère la page https://api.meteo.fr/paris et seulement si la réponse est 200, notifie le groupe telegram -100987654", "intent": "http_cond_telegram", "split": "train"}
+{"prompt": "Déclenche manuellement et télécharge le contenu de https://example.org/rss et quand le code HTTP est 500, préviens alice@exemple.fr par mail", "intent": "http_cond_gmail", "split": "train"}
+{"prompt": "Quand je clique, appelle l'API https://status.monsite.com et seulement si la réponse est 200, envoie un e-mail à alice@exemple.fr", "intent": "http_cond_gmail", "split": "train"}
+{"prompt": "récupère la page http://localhost:3000/health et seulement si la réponse est 200, envoie un e-mail à alice@exemple.fr", "intent": "http_cond_gmail", "split": "train"}
+{"prompt": "Au lancement, récupère la page https://api.meteo.fr/paris et seulement si la réponse est 500, écris un courriel à alice@exemple.fr", "intent": "http_cond_gmail", "split": "train"}
+{"prompt": "Quand je clique, récupère la page https://example.org/rss et si le statut vaut 200, écris un courriel à alice@exemple.fr", "intent": "http_cond_gmail", "split": "train"}
+{"prompt": "Au lancement, appelle l'API http://localhost:3000/health et uniquement si le serveur répond 404, préviens equipe@startup.io par mail", "intent": "http_cond_gmail", "split": "train"}
+{"prompt": "Au lancement, fais une requête GET sur https://example.org/rss et si le statut vaut 200, envoie un e-mail à moi@gmail.com", "intent": "http_cond_gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et fais une requête GET sur https://status.monsite.com et quand le code HTTP est 500, écris un courriel à moi@gmail.com", "intent": "http_cond_gmail", "split": "train"}
+{"prompt": "télécharge le contenu de http://localhost:3000/health et seulement si la réponse est 200, préviens equipe@startup.io par mail", "intent": "http_cond_gmail", "split": "train"}
+{"prompt": "Quand je clique, récupère la page https://example.org/rss et seulement si la réponse est 503, préviens alice@exemple.fr par mail", "intent": "http_cond_gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et télécharge le contenu de http://localhost:3000/health et quand le code HTTP est 500, préviens equipe@startup.io par mail", "intent": "http_cond_gmail", "split": "train"}
+{"prompt": "Quand je clique, télécharge le contenu de https://api.meteo.fr/paris et uniquement si le serveur répond 200, notifie alice@exemple.fr par Gmail", "intent": "http_cond_gmail", "split": "train"}
+{"prompt": "fais une requête GET sur https://api.meteo.fr/paris et quand le code HTTP est 503, notifie moi@gmail.com par Gmail", "intent": "http_cond_gmail", "split": "train"}
+{"prompt": "fais une requête GET sur http://localhost:3000/health et quand le code HTTP est 503, préviens alice@exemple.fr par mail", "intent": "http_cond_gmail", "split": "train"}
+{"prompt": "Quand je clique, récupère la page http://localhost:3000/health et si le statut vaut 500, notifie equipe@startup.io par Gmail", "intent": "http_cond_gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et fais une requête GET sur https://example.org/rss et uniquement si le serveur répond 503, notifie equipe@startup.io par Gmail", "intent": "http_cond_gmail", "split": "train"}
+{"prompt": "Au lancement, récupère la page https://api.meteo.fr/paris et si le statut vaut 503, écris un courriel à moi@gmail.com", "intent": "http_cond_gmail", "split": "train"}
+{"prompt": "Quand je clique, fais une requête GET sur https://status.monsite.com et quand le code HTTP est 200, notifie moi@gmail.com par Gmail", "intent": "http_cond_gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et appelle l'API http://localhost:3000/health et si le statut vaut 503, écris un courriel à moi@gmail.com", "intent": "http_cond_gmail", "split": "train"}
+{"prompt": "télécharge le contenu de http://localhost:3000/health et uniquement si le serveur répond 404, envoie un e-mail à alice@exemple.fr", "intent": "http_cond_gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et télécharge le contenu de https://api.meteo.fr/paris et quand le code HTTP est 500, notifie moi@gmail.com par Gmail", "intent": "http_cond_gmail", "split": "train"}
+{"prompt": "Au lancement, appelle l'API https://api.meteo.fr/paris et si le statut vaut 503, envoie un e-mail à moi@gmail.com", "intent": "http_cond_gmail", "split": "train"}
+{"prompt": "Quand je clique, télécharge le contenu de http://localhost:3000/health et quand le code HTTP est 503, préviens equipe@startup.io par mail", "intent": "http_cond_gmail", "split": "train"}
+{"prompt": "appelle l'API https://status.monsite.com et uniquement si le serveur répond 404, envoie un e-mail à equipe@startup.io", "intent": "http_cond_gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et fais une requête GET sur https://example.org/rss et quand le code HTTP est 404, préviens equipe@startup.io par mail", "intent": "http_cond_gmail", "split": "train"}
+{"prompt": "Quand je clique, récupère la page https://example.org/rss et seulement si la réponse est 503, préviens equipe@startup.io par mail", "intent": "http_cond_gmail", "split": "train"}
+{"prompt": "Au lancement, télécharge le contenu de https://status.monsite.com et seulement si la réponse est 503, envoie un e-mail à moi@gmail.com", "intent": "http_cond_gmail", "split": "train"}
+{"prompt": "télécharge le contenu de http://localhost:3000/health et si le statut vaut 404, envoie un e-mail à moi@gmail.com", "intent": "http_cond_gmail", "split": "train"}
+{"prompt": "Au lancement, récupère la page http://localhost:3000/health et seulement si la réponse est 404, envoie un e-mail à moi@gmail.com", "intent": "http_cond_gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et appelle l'API https://example.org/rss et seulement si la réponse est 503, préviens moi@gmail.com par mail", "intent": "http_cond_gmail", "split": "train"}
+{"prompt": "Au lancement, fais une requête GET sur http://localhost:3000/health et seulement si la réponse est 500, envoie un e-mail à moi@gmail.com", "intent": "http_cond_gmail", "split": "train"}
+{"prompt": "télécharge le contenu de https://status.monsite.com et uniquement si le serveur répond 200, envoie un e-mail à equipe@startup.io", "intent": "http_cond_gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et appelle l'API https://example.org/rss et quand le code HTTP est 200, écris un courriel à moi@gmail.com", "intent": "http_cond_gmail", "split": "train"}
+{"prompt": "Quand je clique, fais une requête GET sur https://example.org/rss et quand le code HTTP est 500, envoie un e-mail à moi@gmail.com", "intent": "http_cond_gmail", "split": "train"}
+{"prompt": "récupère la page http://localhost:3000/health et seulement si la réponse est 500, écris un courriel à alice@exemple.fr", "intent": "http_cond_gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et appelle l'API http://localhost:3000/health et seulement si la réponse est 500, envoie un e-mail à moi@gmail.com", "intent": "http_cond_gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et récupère la page http://localhost:3000/health et uniquement si le serveur répond 200, écris un courriel à moi@gmail.com", "intent": "http_cond_gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et appelle l'API http://localhost:3000/health et quand le code HTTP est 404, préviens moi@gmail.com par mail", "intent": "http_cond_gmail", "split": "train"}
+{"prompt": "récupère la page https://status.monsite.com et uniquement si le serveur répond 404, écris un courriel à moi@gmail.com", "intent": "http_cond_gmail", "split": "train"}
+{"prompt": "Au lancement, appelle l'API https://status.monsite.com et uniquement si le serveur répond 503, écris un courriel à equipe@startup.io", "intent": "http_cond_gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et appelle l'API https://api.meteo.fr/paris ; uniquement si le serveur répond 404, préviens-moi sur Telegram, autrement envoie un e-mail à alice@exemple.fr", "intent": "http_cond_telegram_gmail", "split": "train"}
+{"prompt": "fais une requête GET sur https://api.meteo.fr/paris ; quand le code HTTP est 503, poste sur le canal Telegram 123456, sinon notifie equipe@startup.io par Gmail", "intent": "http_cond_telegram_gmail", "split": "train"}
+{"prompt": "Quand je clique, fais une requête GET sur https://api.meteo.fr/paris ; quand le code HTTP est 500, poste sur le canal Telegram 123456, sinon alors envoie un e-mail à moi@gmail.com", "intent": "http_cond_telegram_gmail", "split": "train"}
+{"prompt": "Quand je clique, appelle l'API https://example.org/rss ; si le statut vaut 200, préviens-moi sur Telegram, dans le cas contraire notifie alice@exemple.fr par Gmail", "intent": "http_cond_telegram_gmail", "split": "train"}
+{"prompt": "Au lancement, fais une requête GET sur http://localhost:3000/health ; quand le code HTTP est 503, préviens-moi sur Telegram, dans le cas contraire notifie alice@exemple.fr par Gmail", "intent": "http_cond_telegram_gmail", "split": "train"}
+{"prompt": "appelle l'API http://localhost:3000/health ; si le statut vaut 503, préviens-moi sur Telegram, autrement notifie equipe@startup.io par Gmail", "intent": "http_cond_telegram_gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et fais une requête GET sur https://api.meteo.fr/paris ; quand le code HTTP est 200, notifie le groupe telegram 123456, sinon alors envoie un e-mail à moi@gmail.com", "intent": "http_cond_telegram_gmail", "split": "train"}
+{"prompt": "appelle l'API https://status.monsite.com ; seulement si la réponse est 404, poste sur le canal Telegram 123456, dans le cas contraire envoie un e-mail à equipe@startup.io", "intent": "http_cond_telegram_gmail", "split": "train"}
+{"prompt": "télécharge le contenu de https://example.org/rss ; si le statut vaut 200, notifie le groupe telegram 123456, sinon alors envoie un e-mail à alice@exemple.fr", "intent": "http_cond_telegram_gmail", "split": "train"}
+{"prompt": "Au lancement, récupère la page https://status.monsite.com ; quand le code HTTP est 500, notifie le groupe telegram 123456, sinon notifie alice@exemple.fr par Gmail", "intent": "http_cond_telegram_gmail", "split": "train"}
+{"prompt": "Quand je clique, récupère la page http://localhost:3000/health ; uniquement si le serveur répond 404, poste sur le canal Telegram 123456, dans le cas contraire envoie un e-mail à alice@exemple.fr", "intent": "http_cond_telegram_gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et appelle l'API https://example.org/rss ; si le statut vaut 404, préviens-moi sur Telegram, dans le cas contraire notifie moi@gmail.com par Gmail", "intent": "http_cond_telegram_gmail", "split": "train"}
+{"prompt": "Au lancement, fais une requête GET sur http://localhost:3000/health ; uniquement si le serveur répond 500, poste sur le canal Telegram -100987654, sinon alors envoie un e-mail à alice@exemple.fr", "intent": "http_cond_telegram_gmail", "split": "train"}
+{"prompt": "Quand je clique, récupère la page http://localhost:3000/health ; quand le code HTTP est 200, préviens-moi sur Telegram, sinon alors notifie moi@gmail.com par Gmail", "intent": "http_cond_telegram_gmail", "split": "train"}
+{"prompt": "Au lancement, fais une requête GET sur https://status.monsite.com ; quand le code HTTP est 500, poste sur le canal Telegram -100987654, autrement notifie moi@gmail.com par Gmail", "intent": "http_cond_telegram_gmail", "split": "train"}
+{"prompt": "Au lancement, fais une requête GET sur https://example.org/rss ; uniquement si le serveur répond 200, envoie un message Telegram, sinon envoie un e-mail à equipe@startup.io", "intent": "http_cond_telegram_gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et appelle l'API https://example.org/rss ; uniquement si le serveur répond 503, envoie un message Telegram, sinon envoie un e-mail à equipe@startup.io", "intent": "http_cond_telegram_gmail", "split": "train"}
+{"prompt": "appelle l'API http://localhost:3000/health ; seulement si la réponse est 200, notifie le groupe telegram 123456, sinon écris un courriel à moi@gmail.com", "intent": "http_cond_telegram_gmail", "split": "train"}
+{"prompt": "Au lancement, fais une requête GET sur https://example.org/rss ; uniquement si le serveur répond 503, notifie le groupe telegram 424242, sinon alors envoie un e-mail à moi@gmail.com", "intent": "http_cond_telegram_gmail", "split": "train"}
+{"prompt": "Quand je clique, récupère la page https://api.meteo.fr/paris ; seulement si la réponse est 404, poste sur le canal Telegram -100987654, sinon envoie un e-mail à alice@exemple.fr", "intent": "http_cond_telegram_gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et télécharge le contenu de https://api.meteo.fr/paris ; uniquement si le serveur répond 404, préviens-moi sur Telegram, autrement notifie alice@exemple.fr par Gmail", "intent": "http_cond_telegram_gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et fais une requête GET sur https://api.meteo.fr/paris ; seulement si la réponse est 200, notifie le groupe telegram 123456, autrement notifie equipe@startup.io par Gmail", "intent": "http_cond_telegram_gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et récupère la page https://status.monsite.com ; uniquement si le serveur répond 200, notifie le groupe telegram 123456, sinon alors notifie moi@gmail.com par Gmail", "intent": "http_cond_telegram_gmail", "split": "train"}
+{"prompt": "Au lancement, fais une requête GET sur http://localhost:3000/health ; uniquement si le serveur répond 200, notifie le groupe telegram -100987654, sinon écris un courriel à moi@gmail.com", "intent": "http_cond_telegram_gmail", "split": "train"}
+{"prompt": "Au lancement, télécharge le contenu de http://localhost:3000/health ; uniquement si le serveur répond 503, préviens-moi sur Telegram, autrement écris un courriel à alice@exemple.fr", "intent": "http_cond_telegram_gmail", "split": "train"}
+{"prompt": "Quand je clique, appelle l'API https://status.monsite.com ; quand le code HTTP est 503, notifie le groupe telegram 123456, sinon écris un courriel à alice@exemple.fr", "intent": "http_cond_telegram_gmail", "split": "train"}
+{"prompt": "Au lancement, appelle l'API https://example.org/rss ; seulement si la réponse est 404, envoie un message Telegram, sinon notifie equipe@startup.io par Gmail", "intent": "http_cond_telegram_gmail", "split": "train"}
+{"prompt": "Quand je clique, fais une requête GET sur http://localhost:3000/health ; si le statut vaut 500, préviens-moi sur Telegram, autrement envoie un e-mail à equipe@startup.io", "intent": "http_cond_telegram_gmail", "split": "train"}
+{"prompt": "récupère la page https://api.meteo.fr/paris ; uniquement si le serveur répond 200, envoie un message Telegram, sinon alors écris un courriel à moi@gmail.com", "intent": "http_cond_telegram_gmail", "split": "train"}
+{"prompt": "appelle l'API https://status.monsite.com ; quand le code HTTP est 500, préviens-moi sur Telegram, sinon alors envoie un e-mail à moi@gmail.com", "intent": "http_cond_telegram_gmail", "split": "train"}
+{"prompt": "Au lancement, fais une requête GET sur https://example.org/rss ; si le statut vaut 200, préviens-moi sur Telegram, autrement envoie un e-mail à moi@gmail.com", "intent": "http_cond_telegram_gmail", "split": "train"}
+{"prompt": "Quand je clique, appelle l'API http://localhost:3000/health ; seulement si la réponse est 503, poste sur le canal Telegram -100987654, sinon alors écris un courriel à equipe@startup.io", "intent": "http_cond_telegram_gmail", "split": "train"}
+{"prompt": "Au lancement, récupère la page http://localhost:3000/health ; si le statut vaut 200, poste sur le canal Telegram -100987654, sinon envoie un e-mail à alice@exemple.fr", "intent": "http_cond_telegram_gmail", "split": "train"}
+{"prompt": "Au lancement, télécharge le contenu de https://example.org/rss ; uniquement si le serveur répond 404, notifie le groupe telegram -100987654, sinon alors envoie un e-mail à alice@exemple.fr", "intent": "http_cond_telegram_gmail", "split": "train"}
+{"prompt": "télécharge le contenu de https://api.meteo.fr/paris ; uniquement si le serveur répond 503, notifie le groupe telegram -100987654, autrement notifie moi@gmail.com par Gmail", "intent": "http_cond_telegram_gmail", "split": "train"}
+{"prompt": "télécharge le contenu de https://example.org/rss ; quand le code HTTP est 503, préviens-moi sur Telegram, autrement écris un courriel à alice@exemple.fr", "intent": "http_cond_telegram_gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et télécharge le contenu de https://example.org/rss ; si le statut vaut 200, envoie un message Telegram, sinon envoie un e-mail à moi@gmail.com", "intent": "http_cond_telegram_gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et télécharge le contenu de https://status.monsite.com ; quand le code HTTP est 404, notifie le groupe telegram -100987654, dans le cas contraire écris un courriel à alice@exemple.fr", "intent": "http_cond_telegram_gmail", "split": "train"}
+{"prompt": "fais une requête GET sur http://localhost:3000/health ; uniquement si le serveur répond 404, poste sur le canal Telegram -100987654, sinon notifie alice@exemple.fr par Gmail", "intent": "http_cond_telegram_gmail", "split": "train"}
+{"prompt": "Déclenche manuellement et fais une requête GET sur http://localhost:3000/health ; quand le code HTTP est 404, notifie le groupe telegram -100987654, sinon alors envoie un e-mail à moi@gmail.com", "intent": "http_cond_telegram_gmail", "split": "train"}
+{"prompt": "Dès que je lance, écris dans mon chat Telegram avec cette note", "intent": "telegram", "split": "val"}
+{"prompt": "Dès que je lance, expédie un mail à equipe@startup.io avec cette note", "intent": "gmail", "split": "val"}
+{"prompt": "Dès que je lance, expédie un mail à moi@gmail.com avec cette note", "intent": "gmail", "split": "val"}
+{"prompt": "Dès que je lance, expédie un mail à alice@exemple.fr avec cette note", "intent": "gmail", "split": "val"}
+{"prompt": "Dès que je lance, diffuse sur telegram ainsi qu'à equipe@startup.io par gmail avec cette note", "intent": "telegram_gmail", "split": "val"}
+{"prompt": "Dès que je lance, diffuse sur telegram ainsi qu'à moi@gmail.com par gmail avec cette note", "intent": "telegram_gmail", "split": "val"}
+{"prompt": "Dès que je lance, diffuse sur telegram ainsi qu'à alice@exemple.fr par gmail avec cette note", "intent": "telegram_gmail", "split": "val"}
+{"prompt": "Dès que je lance, condense cette note", "intent": "llm", "split": "val"}
+{"prompt": "Dès que je lance, condense cette note puis écris dans mon chat Telegram", "intent": "llm_telegram", "split": "val"}
+{"prompt": "Dès que je lance, condense cette note puis expédie un mail à equipe@startup.io", "intent": "llm_gmail", "split": "val"}
+{"prompt": "Dès que je lance, condense cette note puis expédie un mail à moi@gmail.com", "intent": "llm_gmail", "split": "val"}
+{"prompt": "Dès que je lance, condense cette note puis expédie un mail à alice@exemple.fr", "intent": "llm_gmail", "split": "val"}
+{"prompt": "Dès que je lance, interroge https://status.monsite.com", "intent": "http", "split": "val"}
+{"prompt": "Dès que je lance, interroge https://api.meteo.fr/paris", "intent": "http", "split": "val"}
+{"prompt": "Dès que je lance, interroge https://example.org/rss", "intent": "http", "split": "val"}
+{"prompt": "Dès que je lance, interroge http://localhost:3000/health", "intent": "http", "split": "val"}
+{"prompt": "Dès que je lance, interroge http://localhost:3000/health puis écris dans mon chat Telegram", "intent": "http_telegram", "split": "val"}
+{"prompt": "Dès que je lance, interroge https://status.monsite.com puis écris dans mon chat Telegram", "intent": "http_telegram", "split": "val"}
+{"prompt": "Dès que je lance, interroge https://example.org/rss puis écris dans mon chat Telegram", "intent": "http_telegram", "split": "val"}
+{"prompt": "Dès que je lance, interroge https://api.meteo.fr/paris puis écris dans mon chat Telegram", "intent": "http_telegram", "split": "val"}
+{"prompt": "Dès que je lance, interroge https://api.meteo.fr/paris puis expédie un mail à moi@gmail.com", "intent": "http_gmail", "split": "val"}
+{"prompt": "Dès que je lance, interroge https://status.monsite.com puis expédie un mail à alice@exemple.fr", "intent": "http_gmail", "split": "val"}
+{"prompt": "Dès que je lance, interroge https://api.meteo.fr/paris puis expédie un mail à alice@exemple.fr", "intent": "http_gmail", "split": "val"}
+{"prompt": "Dès que je lance, interroge http://localhost:3000/health puis expédie un mail à moi@gmail.com", "intent": "http_gmail", "split": "val"}
+{"prompt": "Dès que je lance, interroge https://example.org/rss puis expédie un mail à moi@gmail.com", "intent": "http_gmail", "split": "val"}
+{"prompt": "Dès que je lance, interroge https://example.org/rss puis expédie un mail à equipe@startup.io", "intent": "http_gmail", "split": "val"}
+{"prompt": "Dès que je lance, interroge https://api.meteo.fr/paris, condense le résultat et écris dans mon chat Telegram", "intent": "http_llm_telegram", "split": "val"}
+{"prompt": "Dès que je lance, interroge https://status.monsite.com, condense le résultat et écris dans mon chat Telegram", "intent": "http_llm_telegram", "split": "val"}
+{"prompt": "Dès que je lance, interroge https://example.org/rss, condense le résultat et écris dans mon chat Telegram", "intent": "http_llm_telegram", "split": "val"}
+{"prompt": "Dès que je lance, interroge http://localhost:3000/health, condense le résultat et écris dans mon chat Telegram", "intent": "http_llm_telegram", "split": "val"}
+{"prompt": "Dès que je lance, interroge http://localhost:3000/health, condense le résultat et expédie un mail à equipe@startup.io", "intent": "http_llm_gmail", "split": "val"}
+{"prompt": "Dès que je lance, interroge https://api.meteo.fr/paris, condense le résultat et expédie un mail à alice@exemple.fr", "intent": "http_llm_gmail", "split": "val"}
+{"prompt": "Dès que je lance, interroge https://example.org/rss, condense le résultat et expédie un mail à alice@exemple.fr", "intent": "http_llm_gmail", "split": "val"}
+{"prompt": "Dès que je lance, interroge https://status.monsite.com, condense le résultat et expédie un mail à equipe@startup.io", "intent": "http_llm_gmail", "split": "val"}
+{"prompt": "Dès que je lance, interroge https://status.monsite.com, condense le résultat et expédie un mail à moi@gmail.com", "intent": "http_llm_gmail", "split": "val"}
+{"prompt": "Dès que je lance, interroge https://example.org/rss, condense le résultat et expédie un mail à moi@gmail.com", "intent": "http_llm_gmail", "split": "val"}
+{"prompt": "Dès que je lance, interroge http://localhost:3000/health et à condition que le code retour soit 404, écris dans mon chat Telegram", "intent": "http_cond_telegram", "split": "val"}
+{"prompt": "Dès que je lance, interroge https://example.org/rss et à condition que le code retour soit 500, écris dans mon chat Telegram", "intent": "http_cond_telegram", "split": "val"}
+{"prompt": "Dès que je lance, interroge https://example.org/rss et à condition que le code retour soit 200, écris dans mon chat Telegram", "intent": "http_cond_telegram", "split": "val"}
+{"prompt": "Dès que je lance, interroge https://api.meteo.fr/paris et à condition que le code retour soit 200, écris dans mon chat Telegram", "intent": "http_cond_telegram", "split": "val"}
+{"prompt": "Dès que je lance, interroge https://status.monsite.com et à condition que le code retour soit 200, écris dans mon chat Telegram", "intent": "http_cond_telegram", "split": "val"}
+{"prompt": "Dès que je lance, interroge https://api.meteo.fr/paris et à condition que le code retour soit 404, écris dans mon chat Telegram", "intent": "http_cond_telegram", "split": "val"}
+{"prompt": "Dès que je lance, interroge https://status.monsite.com et à condition que le code retour soit 503, expédie un mail à equipe@startup.io", "intent": "http_cond_gmail", "split": "val"}
+{"prompt": "Dès que je lance, interroge https://example.org/rss et à condition que le code retour soit 500, expédie un mail à alice@exemple.fr", "intent": "http_cond_gmail", "split": "val"}
+{"prompt": "Dès que je lance, interroge https://example.org/rss et à condition que le code retour soit 200, expédie un mail à equipe@startup.io", "intent": "http_cond_gmail", "split": "val"}
+{"prompt": "Dès que je lance, interroge https://example.org/rss et à condition que le code retour soit 500, expédie un mail à moi@gmail.com", "intent": "http_cond_gmail", "split": "val"}
+{"prompt": "Dès que je lance, interroge https://status.monsite.com et à condition que le code retour soit 500, expédie un mail à alice@exemple.fr", "intent": "http_cond_gmail", "split": "val"}
+{"prompt": "Dès que je lance, interroge http://localhost:3000/health et à condition que le code retour soit 404, expédie un mail à moi@gmail.com", "intent": "http_cond_gmail", "split": "val"}
+{"prompt": "Dès que je lance, interroge http://localhost:3000/health ; à condition que le code retour soit 404, écris dans mon chat Telegram, si ce n'est pas le cas expédie un mail à equipe@startup.io", "intent": "http_cond_telegram_gmail", "split": "val"}
+{"prompt": "Dès que je lance, interroge http://localhost:3000/health ; à condition que le code retour soit 500, écris dans mon chat Telegram, si ce n'est pas le cas expédie un mail à alice@exemple.fr", "intent": "http_cond_telegram_gmail", "split": "val"}
+{"prompt": "Dès que je lance, interroge http://localhost:3000/health ; à condition que le code retour soit 200, écris dans mon chat Telegram, si ce n'est pas le cas expédie un mail à alice@exemple.fr", "intent": "http_cond_telegram_gmail", "split": "val"}
+{"prompt": "Dès que je lance, interroge https://example.org/rss ; à condition que le code retour soit 500, écris dans mon chat Telegram, si ce n'est pas le cas expédie un mail à equipe@startup.io", "intent": "http_cond_telegram_gmail", "split": "val"}
+{"prompt": "Dès que je lance, interroge https://api.meteo.fr/paris ; à condition que le code retour soit 200, écris dans mon chat Telegram, si ce n'est pas le cas expédie un mail à alice@exemple.fr", "intent": "http_cond_telegram_gmail", "split": "val"}
+{"prompt": "Dès que je lance, interroge https://api.meteo.fr/paris ; à condition que le code retour soit 500, écris dans mon chat Telegram, si ce n'est pas le cas expédie un mail à moi@gmail.com", "intent": "http_cond_telegram_gmail", "split": "val"}
+{"prompt": "À chaque démarrage manuel, balance une alerte via mon bot telegram avec le paragraphe fourni", "intent": "telegram", "split": "test"}
+{"prompt": "À chaque démarrage manuel, fais partir un message électronique vers equipe@startup.io avec le paragraphe fourni", "intent": "gmail", "split": "test"}
+{"prompt": "À chaque démarrage manuel, fais partir un message électronique vers moi@gmail.com avec le paragraphe fourni", "intent": "gmail", "split": "test"}
+{"prompt": "À chaque démarrage manuel, fais partir un message électronique vers alice@exemple.fr avec le paragraphe fourni", "intent": "gmail", "split": "test"}
+{"prompt": "À chaque démarrage manuel, double alerte : bot telegram et message électronique à alice@exemple.fr avec le paragraphe fourni", "intent": "telegram_gmail", "split": "test"}
+{"prompt": "À chaque démarrage manuel, double alerte : bot telegram et message électronique à equipe@startup.io avec le paragraphe fourni", "intent": "telegram_gmail", "split": "test"}
+{"prompt": "À chaque démarrage manuel, double alerte : bot telegram et message électronique à moi@gmail.com avec le paragraphe fourni", "intent": "telegram_gmail", "split": "test"}
+{"prompt": "À chaque démarrage manuel, rédige une synthèse courte de le paragraphe fourni", "intent": "llm", "split": "test"}
+{"prompt": "À chaque démarrage manuel, rédige une synthèse courte de le paragraphe fourni puis balance une alerte via mon bot telegram", "intent": "llm_telegram", "split": "test"}
+{"prompt": "À chaque démarrage manuel, rédige une synthèse courte de le paragraphe fourni puis fais partir un message électronique vers moi@gmail.com", "intent": "llm_gmail", "split": "test"}
+{"prompt": "À chaque démarrage manuel, rédige une synthèse courte de le paragraphe fourni puis fais partir un message électronique vers equipe@startup.io", "intent": "llm_gmail", "split": "test"}
+{"prompt": "À chaque démarrage manuel, rédige une synthèse courte de le paragraphe fourni puis fais partir un message électronique vers alice@exemple.fr", "intent": "llm_gmail", "split": "test"}
+{"prompt": "À chaque démarrage manuel, va chercher les données de https://api.meteo.fr/paris", "intent": "http", "split": "test"}
+{"prompt": "À chaque démarrage manuel, va chercher les données de https://example.org/rss", "intent": "http", "split": "test"}
+{"prompt": "À chaque démarrage manuel, va chercher les données de http://localhost:3000/health", "intent": "http", "split": "test"}
+{"prompt": "À chaque démarrage manuel, va chercher les données de https://status.monsite.com", "intent": "http", "split": "test"}
+{"prompt": "À chaque démarrage manuel, va chercher les données de https://example.org/rss puis balance une alerte via mon bot telegram", "intent": "http_telegram", "split": "test"}
+{"prompt": "À chaque démarrage manuel, va chercher les données de https://api.meteo.fr/paris puis balance une alerte via mon bot telegram", "intent": "http_telegram", "split": "test"}
+{"prompt": "À chaque démarrage manuel, va chercher les données de http://localhost:3000/health puis balance une alerte via mon bot telegram", "intent": "http_telegram", "split": "test"}
+{"prompt": "À chaque démarrage manuel, va chercher les données de https://status.monsite.com puis balance une alerte via mon bot telegram", "intent": "http_telegram", "split": "test"}
+{"prompt": "À chaque démarrage manuel, va chercher les données de https://status.monsite.com puis fais partir un message électronique vers alice@exemple.fr", "intent": "http_gmail", "split": "test"}
+{"prompt": "À chaque démarrage manuel, va chercher les données de http://localhost:3000/health puis fais partir un message électronique vers moi@gmail.com", "intent": "http_gmail", "split": "test"}
+{"prompt": "À chaque démarrage manuel, va chercher les données de https://example.org/rss puis fais partir un message électronique vers alice@exemple.fr", "intent": "http_gmail", "split": "test"}
+{"prompt": "À chaque démarrage manuel, va chercher les données de https://api.meteo.fr/paris puis fais partir un message électronique vers equipe@startup.io", "intent": "http_gmail", "split": "test"}
+{"prompt": "À chaque démarrage manuel, va chercher les données de https://status.monsite.com puis fais partir un message électronique vers equipe@startup.io", "intent": "http_gmail", "split": "test"}
+{"prompt": "À chaque démarrage manuel, va chercher les données de https://example.org/rss puis fais partir un message électronique vers moi@gmail.com", "intent": "http_gmail", "split": "test"}
+{"prompt": "À chaque démarrage manuel, va chercher les données de https://status.monsite.com, rédige une synthèse courte de le résultat et balance une alerte via mon bot telegram", "intent": "http_llm_telegram", "split": "test"}
+{"prompt": "À chaque démarrage manuel, va chercher les données de https://example.org/rss, rédige une synthèse courte de le résultat et balance une alerte via mon bot telegram", "intent": "http_llm_telegram", "split": "test"}
+{"prompt": "À chaque démarrage manuel, va chercher les données de https://api.meteo.fr/paris, rédige une synthèse courte de le résultat et balance une alerte via mon bot telegram", "intent": "http_llm_telegram", "split": "test"}
+{"prompt": "À chaque démarrage manuel, va chercher les données de http://localhost:3000/health, rédige une synthèse courte de le résultat et balance une alerte via mon bot telegram", "intent": "http_llm_telegram", "split": "test"}
+{"prompt": "À chaque démarrage manuel, va chercher les données de https://status.monsite.com, rédige une synthèse courte de le résultat et fais partir un message électronique vers alice@exemple.fr", "intent": "http_llm_gmail", "split": "test"}
+{"prompt": "À chaque démarrage manuel, va chercher les données de https://api.meteo.fr/paris, rédige une synthèse courte de le résultat et fais partir un message électronique vers moi@gmail.com", "intent": "http_llm_gmail", "split": "test"}
+{"prompt": "À chaque démarrage manuel, va chercher les données de https://example.org/rss, rédige une synthèse courte de le résultat et fais partir un message électronique vers alice@exemple.fr", "intent": "http_llm_gmail", "split": "test"}
+{"prompt": "À chaque démarrage manuel, va chercher les données de https://api.meteo.fr/paris, rédige une synthèse courte de le résultat et fais partir un message électronique vers alice@exemple.fr", "intent": "http_llm_gmail", "split": "test"}
+{"prompt": "À chaque démarrage manuel, va chercher les données de https://status.monsite.com, rédige une synthèse courte de le résultat et fais partir un message électronique vers equipe@startup.io", "intent": "http_llm_gmail", "split": "test"}
+{"prompt": "À chaque démarrage manuel, va chercher les données de https://api.meteo.fr/paris, rédige une synthèse courte de le résultat et fais partir un message électronique vers equipe@startup.io", "intent": "http_llm_gmail", "split": "test"}
+{"prompt": "À chaque démarrage manuel, va chercher les données de https://api.meteo.fr/paris et dans le cas où on obtient un 200, balance une alerte via mon bot telegram", "intent": "http_cond_telegram", "split": "test"}
+{"prompt": "À chaque démarrage manuel, va chercher les données de https://api.meteo.fr/paris et dans le cas où on obtient un 503, balance une alerte via mon bot telegram", "intent": "http_cond_telegram", "split": "test"}
+{"prompt": "À chaque démarrage manuel, va chercher les données de https://example.org/rss et dans le cas où on obtient un 200, balance une alerte via mon bot telegram", "intent": "http_cond_telegram", "split": "test"}
+{"prompt": "À chaque démarrage manuel, va chercher les données de https://api.meteo.fr/paris et dans le cas où on obtient un 404, balance une alerte via mon bot telegram", "intent": "http_cond_telegram", "split": "test"}
+{"prompt": "À chaque démarrage manuel, va chercher les données de https://example.org/rss et dans le cas où on obtient un 404, balance une alerte via mon bot telegram", "intent": "http_cond_telegram", "split": "test"}
+{"prompt": "À chaque démarrage manuel, va chercher les données de http://localhost:3000/health et dans le cas où on obtient un 503, balance une alerte via mon bot telegram", "intent": "http_cond_telegram", "split": "test"}
+{"prompt": "À chaque démarrage manuel, va chercher les données de https://status.monsite.com et dans le cas où on obtient un 503, fais partir un message électronique vers equipe@startup.io", "intent": "http_cond_gmail", "split": "test"}
+{"prompt": "À chaque démarrage manuel, va chercher les données de https://api.meteo.fr/paris et dans le cas où on obtient un 503, fais partir un message électronique vers equipe@startup.io", "intent": "http_cond_gmail", "split": "test"}
+{"prompt": "À chaque démarrage manuel, va chercher les données de https://example.org/rss et dans le cas où on obtient un 200, fais partir un message électronique vers moi@gmail.com", "intent": "http_cond_gmail", "split": "test"}
+{"prompt": "À chaque démarrage manuel, va chercher les données de https://api.meteo.fr/paris et dans le cas où on obtient un 500, fais partir un message électronique vers moi@gmail.com", "intent": "http_cond_gmail", "split": "test"}
+{"prompt": "À chaque démarrage manuel, va chercher les données de https://status.monsite.com et dans le cas où on obtient un 500, fais partir un message électronique vers equipe@startup.io", "intent": "http_cond_gmail", "split": "test"}
+{"prompt": "À chaque démarrage manuel, va chercher les données de https://status.monsite.com et dans le cas où on obtient un 500, fais partir un message électronique vers alice@exemple.fr", "intent": "http_cond_gmail", "split": "test"}
+{"prompt": "À chaque démarrage manuel, va chercher les données de https://example.org/rss ; dans le cas où on obtient un 200, balance une alerte via mon bot telegram, en cas d'échec fais partir un message électronique vers moi@gmail.com", "intent": "http_cond_telegram_gmail", "split": "test"}
+{"prompt": "À chaque démarrage manuel, va chercher les données de https://example.org/rss ; dans le cas où on obtient un 500, balance une alerte via mon bot telegram, en cas d'échec fais partir un message électronique vers alice@exemple.fr", "intent": "http_cond_telegram_gmail", "split": "test"}
+{"prompt": "À chaque démarrage manuel, va chercher les données de https://status.monsite.com ; dans le cas où on obtient un 500, balance une alerte via mon bot telegram, en cas d'échec fais partir un message électronique vers moi@gmail.com", "intent": "http_cond_telegram_gmail", "split": "test"}
+{"prompt": "À chaque démarrage manuel, va chercher les données de https://status.monsite.com ; dans le cas où on obtient un 503, balance une alerte via mon bot telegram, en cas d'échec fais partir un message électronique vers moi@gmail.com", "intent": "http_cond_telegram_gmail", "split": "test"}
+{"prompt": "À chaque démarrage manuel, va chercher les données de https://status.monsite.com ; dans le cas où on obtient un 404, balance une alerte via mon bot telegram, en cas d'échec fais partir un message électronique vers equipe@startup.io", "intent": "http_cond_telegram_gmail", "split": "test"}
+{"prompt": "À chaque démarrage manuel, va chercher les données de https://example.org/rss ; dans le cas où on obtient un 200, balance une alerte via mon bot telegram, en cas d'échec fais partir un message électronique vers alice@exemple.fr", "intent": "http_cond_telegram_gmail", "split": "test"}

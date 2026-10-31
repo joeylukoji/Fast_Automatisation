@@ -1,0 +1,149 @@
+{
+  "best_on_val": "M1_char_lr_C0.5",
+  "final": {
+    "B0_majority/test": {
+      "acc": 0.1111111111111111,
+      "acc_ci95": [
+        0.037037037037037035,
+        0.2037037037037037
+      ],
+      "macro_f1": 0.014285714285714287,
+      "block_f1": 0.6305084745762712,
+      "wf_valid": 1.0,
+      "dryrun_ok": 1.0
+    },
+    "B0_majority/manual": {
+      "acc": 0.07142857142857142,
+      "acc_ci95": [
+        0.0,
+        0.16666666666666666
+      ],
+      "macro_f1": 0.009523809523809523,
+      "block_f1": 0.5,
+      "wf_valid": 1.0,
+      "dryrun_ok": 1.0
+    },
+    "B1_keywords/test": {
+      "acc": 0.5740740740740741,
+      "acc_ci95": [
+        0.4444444444444444,
+        0.7037037037037037
+      ],
+      "macro_f1": 0.5476190476190477,
+      "block_f1": 0.8416988416988417,
+      "wf_valid": 1.0,
+      "dryrun_ok": 1.0
+    },
+    "B1_keywords/manual": {
+      "acc": 0.8095238095238095,
+      "acc_ci95": [
+        0.6904761904761905,
+        0.9285714285714286
+      ],
+      "macro_f1": 0.8017006802721088,
+      "block_f1": 0.9302325581395349,
+      "wf_valid": 1.0,
+      "dryrun_ok": 1.0
+    },
+    "M1_char_lr_C0.5/test": {
+      "acc": 0.7592592592592593,
+      "acc_ci95": [
+        0.6481481481481481,
+        0.8703703703703703
+      ],
+      "macro_f1": 0.7397959183673469,
+      "block_f1": 0.953405017921147,
+      "wf_valid": 1.0,
+      "dryrun_ok": 1.0
+    },
+    "M1_char_lr_C0.5/manual": {
+      "acc": 0.6666666666666666,
+      "acc_ci95": [
+        0.5238095238095238,
+        0.8095238095238095
+      ],
+      "macro_f1": 0.6512059369202227,
+      "block_f1": 0.8804347826086957,
+      "wf_valid": 1.0,
+      "dryrun_ok": 1.0
+    }
+  },
+  "pure_python_agreement": 1.0,
+  "manual_errors": [
+    {
+      "prompt": "Je veux recevoir ce rappel dans Telegram, chat 555555",
+      "true": "telegram",
+      "pred": "http_cond_telegram_gmail"
+    },
+    {
+      "prompt": "Transmets ma note à mon bot Telegram",
+      "true": "telegram",
+      "pred": "telegram_gmail"
+    },
+    {
+      "prompt": "Envoie ce rappel par courrier électronique à rh@entreprise.com",
+      "true": "gmail",
+      "pred": "http_gmail"
+    },
+    {
+      "prompt": "Reformule ce paragraphe en une phrase",
+      "true": "llm",
+      "pred": "http"
+    },
+    {
+      "prompt": "Résume ce compte rendu et mets le résumé sur Telegram",
+      "true": "llm_telegram",
+      "pred": "llm"
+    },
+    {
+      "prompt": "Fais un TL;DR de ce texte et envoie-le dans Telegram",
+      "true": "llm_telegram",
+      "pred": "telegram_gmail"
+    },
+    {
+      "prompt": "Récupère https://api.coin.io/btc et envoie le résultat sur Telegram",
+      "true": "http_telegram",
+      "pred": "http_llm_telegram"
+    },
+    {
+      "prompt": "Appelle https://meteo.fr/api et poste la réponse dans mon Telegram",
+      "true": "http_telegram",
+      "pred": "http_cond_telegram"
+    },
+    {
+      "prompt": "Récupère https://api.coin.io/btc et envoie-le par mail à moi@ici.fr",
+      "true": "http_gmail",
+      "pred": "telegram_gmail"
+    },
+    {
+      "prompt": "Interroge https://meteo.fr/api puis mail le résultat à a@b.fr",
+      "true": "http_gmail",
+      "pred": "http_llm_gmail"
+    },
+    {
+      "prompt": "Télécharge https://site.fr/export.csv et envoie-le à compta@x.fr",
+      "true": "http_gmail",
+      "pred": "telegram_gmail"
+    },
+    {
+      "prompt": "Prends la page https://doc.io, condense-la avec Gemma et envoie sur Telegram",
+      "true": "http_llm_telegram",
+      "pred": "telegram_gmail"
+    },
+    {
+      "prompt": "Teste https://shop.fr : en cas de 404 envoie une alerte Telegram",
+      "true": "http_cond_telegram",
+      "pred": "http_telegram"
+    },
+    {
+      "prompt": "Contrôle https://shop.fr et si 404 préviens support@shop.fr par courriel",
+      "true": "http_cond_gmail",
+      "pred": "http_gmail"
+    }
+  ],
+  "env": {
+    "python": "3.13.18",
+    "sklearn": "1.9.1",
+    "numpy": "2.5.3"
+  }
+}
