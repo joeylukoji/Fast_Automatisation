@@ -98,3 +98,16 @@ def test_generate_mock_mode(monkeypatch):
     monkeypatch.setenv("KERNEL_LLM_MOCK", "1")
     r = client.post("/api/generate", json={"prompt": "hello"})
     assert r.status_code == 200 and r.json()["workflow"] is not None
+
+
+def test_generate_local_model(monkeypatch):
+    from fastapi.testclient import TestClient
+    from app.main import app
+    monkeypatch.setenv("KERNEL_LLM_LOCAL", "1")
+    body = TestClient(app).post("/api/generate", json={
+        "prompt": "Vérifie https://monsite.fr et si 500 envoie un mail à ops@x.fr"}).json()
+    wf = body["workflow"]
+    assert body["attempts"] == 1 and wf is not None
+    types = [n["type"] for n in wf["nodes"]]
+    assert types[:3] == ["trigger_manual", "http_request", "condition"] and "gmail_send" in types
+    assert any(n["params"].get("to") == "ops@x.fr" for n in wf["nodes"])

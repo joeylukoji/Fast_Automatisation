@@ -32,6 +32,7 @@ def load(name):
 syn = load("synthetic.jsonl")
 data = {s: [r for r in syn if r["split"] == s] for s in ("train", "val", "test")}
 data["manual"] = load("manual_test.jsonl")
+data["manual_val"] = load("manual_val.jsonl")
 X = {k: [r["prompt"] for r in v] for k, v in data.items()}
 Y = {k: [r["intent"] for r in v] for k, v in data.items()}
 
@@ -48,11 +49,7 @@ class Keywords:
     def predict(self, xs):
         out = []
         for t in xs:
-            t = lm.normalize(t)
-            tg, gm = "telegram" in t, any(k in t for k in ("mail", "courriel", "gmail", "EMAIL"))
-            http = "URL" in t.split() or any(k in t for k in ("http", "api", "requete", "page"))
-            llm = any(k in t for k in ("resum", "synth", "condens", "gemma", "ia "))
-            cond = any(k in t for k in (" si ", "seulement", "quand le code", "condition", "statut", "uniquement si"))
+            tg, gm, http, llm, cond = map(bool, lm.kw_flags(t))
             if http and cond:
                 out.append("http_cond_telegram_gmail" if tg and gm else "http_cond_gmail" if gm else "http_cond_telegram")
             elif http:
@@ -66,20 +63,28 @@ class Keywords:
 
 
 class Tfidf:
-    def __init__(self, kind, C=None, k=None):
-        self.kind, self.C, self.k = kind, C, k
+    def __init__(self, kind, C=None, k=None, kw=0.0):
+        self.kind, self.C, self.k, self.kw = kind, C, k, kw
         an = dict(analyzer="char_wb", ngram_range=(2, 5)) if kind.startswith("char") else dict(analyzer="word", ngram_range=(1, 2))
         self.vec = TfidfVectorizer(preprocessor=lm.normalize, lowercase=False, sublinear_tf=True, **an)
         self.clf = (KNeighborsClassifier(n_neighbors=k, metric="cosine") if k
                     else LogisticRegression(C=C, max_iter=5000, random_state=SEED))
-    def fit(self, x, y): self.clf.fit(self.vec.fit_transform(x), y); return self
-    def predict(self, x): return list(self.clf.predict(self.vec.transform(x)))
+    def feats(self, x, fit=False):
+        m = self.vec.fit_transform(x) if fit else self.vec.transform(x)
+        if not self.kw: return m
+        from scipy.sparse import csr_matrix, hstack
+        return hstack([m, csr_matrix(np.array([lm.kw_flags(t) for t in x]) * self.kw)]).tocsr()
+    def fit(self, x, y): self.clf.fit(self.feats(x, True), y); return self
+    def predict(self, x): return list(self.clf.predict(self.feats(x)))
 
 
 CANDIDATES = {"B0_majority": lambda: Majority(), "B1_keywords": lambda: Keywords()}
 for C in (0.5, 2, 8, 32):
     CANDIDATES[f"M1_char_lr_C{C}"] = lambda C=C: Tfidf("char", C=C)
     CANDIDATES[f"M2_word_lr_C{C}"] = lambda C=C: Tfidf("word", C=C)
+for C in (0.5, 2, 8, 32):
+    for w in (0.5, 1, 2):
+        CANDIDATES[f"M4_hybrid_C{C}_kw{w}"] = lambda C=C, w=w: Tfidf("char", C=C, kw=w)
 for k in (1, 3):
     CANDIDATES[f"M3_char_knn_k{k}"] = lambda k=k: Tfidf("char", k=k)
 
@@ -120,14 +125,20 @@ def metrics(split, yp):
 rows, fitted = [], {}
 for name, make in CANDIDATES.items():
     m = make().fit(X["train"], Y["train"]); fitted[name] = m
-    v = metrics("val", m.predict(X["val"]))
-    rows.append({"exp_id": f"E1-{name}", "model": name, "split": "val", **{k: (round(x, 4) if isinstance(x, float) else x) for k, x in v.items()}})
-best = max((r for r in rows if r["model"].startswith("M")), key=lambda r: (r["acc"], r["macro_f1"]))["model"]
+    for split in ("val", "manual_val"):
+        v = metrics(split, m.predict(X[split]))
+        rows.append({"exp_id": f"E1-{name}-{split}", "model": name, "split": split, **{k: (round(x, 4) if isinstance(x, float) else x) for k, x in v.items()}})
+# Sélection : exactitude moyenne (val synthétique + val manuelle), modèles appris uniquement.
+score = {}
+for r in rows:
+    if r["model"].startswith("M"): score.setdefault(r["model"], []).append(r["acc"])
+best = max(score, key=lambda k: sum(score[k]))
+best_char = max((k for k in score if k.startswith("M1")), key=lambda k: sum(score[k]))
 print("meilleur sur validation :", best)
 
 # ---------- 2) Évaluation finale (une seule fois) : test synthétique + test manuel ----------
 final = {}
-for name in ("B0_majority", "B1_keywords", best):
+for name in dict.fromkeys(("B0_majority", "B1_keywords", best_char, best)):
     for split in ("test", "manual"):
         yp = fitted[name].predict(X[split]); mtr = metrics(split, yp)
         mtr["wf_valid"], mtr["dryrun_ok"] = wf_checks(X[split], yp)
@@ -142,10 +153,10 @@ with open(EXP / "experiments.csv", "w", newline="") as f:
     w.writeheader(); [w.writerow(r) for r in rows]
 
 # ---------- 3) Export du modèle retenu (réentraîné sur train+val) ----------
-m = CANDIDATES[best]().fit(X["train"] + X["val"], Y["train"] + Y["val"])
+m = CANDIDATES[best]().fit(X["train"] + X["val"] + X["manual_val"], Y["train"] + Y["val"] + Y["manual_val"])
 assert isinstance(m.clf, LogisticRegression) and m.kind == "char", "l'export pur Python ne couvre que M1"
 vocab = {k: int(v) for k, v in m.vec.vocabulary_.items()}
-model_json = {"model": best, "trained_on": "train+val", "seed": SEED, "ngram_range": [2, 5],
+model_json = {"model": best, "trained_on": "train+val+manual_val", "kw_weight": m.kw, "seed": SEED, "ngram_range": [2, 5],
               "classes": list(m.clf.classes_), "vocabulary": vocab, "idf": [round(x, 6) for x in m.vec.idf_.tolist()],
               "coef": [[round(x, 6) for x in r] for r in m.clf.coef_.tolist()], "intercept": [round(x, 6) for x in m.clf.intercept_.tolist()]}
 out = ROOT / "backend/app/ai/local_model.json"; out.write_text(json.dumps(model_json, ensure_ascii=False, separators=(",", ":")))

@@ -105,6 +105,21 @@ def _char_ngrams(text: str, lo: int, hi: int) -> list[str]:
     return grams
 
 
+# Indicateurs mots-clés (mêmes listes que la baseline B1 de experiments/train.py).
+KEYWORDS = {
+    "telegram": ("telegram",),
+    "mail": ("mail", "courriel", "gmail", "EMAIL"),
+    "http": ("URL", "http", "api", "requete", "page"),
+    "llm": ("resum", "synth", "condens", "gemma", "ia "),
+    "cond": (" si ", "seulement", "quand le code", "condition", "statut", "uniquement si"),
+}
+
+
+def kw_flags(prompt: str) -> list[float]:
+    t = f" {normalize(prompt)} "
+    return [float(any(k in t for k in ks)) for ks in KEYWORDS.values()]
+
+
 class LocalModel:
     def __init__(self, path: Path = MODEL_PATH):
         m = json.loads(path.read_text())
@@ -114,6 +129,7 @@ class LocalModel:
         self.intercept: list[float] = m["intercept"]
         self.classes: list[str] = m["classes"]
         self.ngram = tuple(m["ngram_range"])
+        self.kw_weight: float = m.get("kw_weight", 0.0)
 
     def scores(self, prompt: str) -> list[float]:
         counts: dict[int, int] = {}
@@ -122,7 +138,10 @@ class LocalModel:
                 counts[j] = counts.get(j, 0) + 1
         vec = {j: (1 + math.log(c)) * self.idf[j] for j, c in counts.items()}  # sublinear_tf
         norm = math.sqrt(sum(v * v for v in vec.values())) or 1.0
-        return [b + sum(w[j] * v / norm for j, v in vec.items()) for w, b in zip(self.coef, self.intercept)]
+        n = len(self.vocab)
+        kw = kw_flags(prompt) if self.kw_weight else []
+        return [b + sum(w[j] * v / norm for j, v in vec.items()) + sum(w[n + i] * self.kw_weight * f for i, f in enumerate(kw))
+                for w, b in zip(self.coef, self.intercept)]
 
     def predict(self, prompt: str) -> tuple[str, float]:
         s = self.scores(prompt)

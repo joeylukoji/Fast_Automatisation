@@ -7,6 +7,7 @@ fournisseur exposant ce format. Variables d'environnement :
   KERNEL_LLM_MODEL      nom EXACT du modèle chez votre fournisseur (à vérifier)
   KERNEL_LLM_API_KEY    clé si nécessaire
   KERNEL_LLM_MOCK=1     renvoie un workflow d'exemple, sans appeler de modèle (démo hors-ligne)
+  KERNEL_LLM_LOCAL=1    générateur local entraîné (ai/local_model.py) : hors-ligne, dépend du prompt
 """
 from __future__ import annotations
 
@@ -32,6 +33,10 @@ MOCK_WORKFLOW = {
 
 
 def complete(messages: list[dict], json_mode: bool = False) -> str:
+    if os.getenv("KERNEL_LLM_LOCAL") == "1" and json_mode:
+        from . import local_model
+        prompt = next((m["content"] for m in messages if m["role"] == "user"), "")
+        return json.dumps(local_model.generate(prompt), ensure_ascii=False)
     if os.getenv("KERNEL_LLM_MOCK") == "1":
         return json.dumps(MOCK_WORKFLOW) if json_mode else "[réponse simulée du LLM]"
 

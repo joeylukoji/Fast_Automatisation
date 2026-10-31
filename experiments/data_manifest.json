@@ -1,5 +1,9 @@
 {
   "files": {
+    "manual_val.jsonl": {
+      "sha256": "cb6609ed40579cbd5ef75a7b9ca69f3693fc9b819e581ea8b59e5ea763a5a28e",
+      "rows": 28
+    },
     "synthetic.jsonl": {
       "sha256": "7fda50da932521396314982883b08d0d5b432eab576bbc838440e3ffc6d0cafe",
       "rows": 668
@@ -13,7 +17,8 @@
     "train": 560,
     "val": 54,
     "test": 54,
-    "manual": 42
+    "manual": 42,
+    "manual_val": 28
   },
   "classes": 14,
   "generator": "experiments/build_dataset.py (seed 42)",

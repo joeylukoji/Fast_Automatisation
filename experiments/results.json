@@ -1,5 +1,5 @@
 {
-  "best_on_val": "M1_char_lr_C0.5",
+  "best_on_val": "M4_hybrid_C0.5_kw1",
   "final": {
     "B0_majority/test": {
       "acc": 0.1111111111111111,
@@ -8,7 +8,7 @@
         0.2037037037037037
       ],
       "macro_f1": 0.014285714285714287,
-      "block_f1": 0.6305084745762712,
+      "block_f1": 0.6224066390041494,
       "wf_valid": 1.0,
       "dryrun_ok": 1.0
     },
@@ -16,10 +16,10 @@
       "acc": 0.07142857142857142,
       "acc_ci95": [
         0.0,
-        0.16666666666666666
+        0.14285714285714285
       ],
       "macro_f1": 0.009523809523809523,
-      "block_f1": 0.5,
+      "block_f1": 0.5172413793103449,
       "wf_valid": 1.0,
       "dryrun_ok": 1.0
     },
@@ -35,35 +35,57 @@
       "dryrun_ok": 1.0
     },
     "B1_keywords/manual": {
-      "acc": 0.8095238095238095,
+      "acc": 0.8571428571428571,
       "acc_ci95": [
-        0.6904761904761905,
-        0.9285714285714286
+        0.7380952380952381,
+        0.9523809523809523
       ],
-      "macro_f1": 0.8017006802721088,
-      "block_f1": 0.9302325581395349,
+      "macro_f1": 0.8523809523809524,
+      "block_f1": 0.9425287356321839,
       "wf_valid": 1.0,
       "dryrun_ok": 1.0
     },
-    "M1_char_lr_C0.5/test": {
-      "acc": 0.7592592592592593,
+    "M1_char_lr_C2/test": {
+      "acc": 0.7777777777777778,
       "acc_ci95": [
-        0.6481481481481481,
-        0.8703703703703703
+        0.6666666666666666,
+        0.8888888888888888
       ],
-      "macro_f1": 0.7397959183673469,
-      "block_f1": 0.953405017921147,
+      "macro_f1": 0.8214285714285714,
+      "block_f1": 0.9568345323741008,
       "wf_valid": 1.0,
       "dryrun_ok": 1.0
     },
-    "M1_char_lr_C0.5/manual": {
-      "acc": 0.6666666666666666,
+    "M1_char_lr_C2/manual": {
+      "acc": 0.7142857142857143,
       "acc_ci95": [
-        0.5238095238095238,
-        0.8095238095238095
+        0.5714285714285714,
+        0.8339285714285682
       ],
-      "macro_f1": 0.6512059369202227,
-      "block_f1": 0.8804347826086957,
+      "macro_f1": 0.6964440321583177,
+      "block_f1": 0.8924731182795699,
+      "wf_valid": 1.0,
+      "dryrun_ok": 1.0
+    },
+    "M4_hybrid_C0.5_kw1/test": {
+      "acc": 0.5740740740740741,
+      "acc_ci95": [
+        0.4444444444444444,
+        0.7037037037037037
+      ],
+      "macro_f1": 0.5476190476190477,
+      "block_f1": 0.8416988416988417,
+      "wf_valid": 1.0,
+      "dryrun_ok": 1.0
+    },
+    "M4_hybrid_C0.5_kw1/manual": {
+      "acc": 0.9285714285714286,
+      "acc_ci95": [
+        0.8333333333333334,
+        1.0
+      ],
+      "macro_f1": 0.9265306122448981,
+      "block_f1": 0.9775280898876404,
       "wf_valid": 1.0,
       "dryrun_ok": 1.0
     }
@@ -71,74 +93,19 @@
   "pure_python_agreement": 1.0,
   "manual_errors": [
     {
-      "prompt": "Je veux recevoir ce rappel dans Telegram, chat 555555",
-      "true": "telegram",
-      "pred": "http_cond_telegram_gmail"
-    },
-    {
-      "prompt": "Transmets ma note à mon bot Telegram",
-      "true": "telegram",
-      "pred": "telegram_gmail"
-    },
-    {
-      "prompt": "Envoie ce rappel par courrier électronique à rh@entreprise.com",
-      "true": "gmail",
-      "pred": "http_gmail"
-    },
-    {
       "prompt": "Reformule ce paragraphe en une phrase",
       "true": "llm",
       "pred": "http"
     },
     {
-      "prompt": "Résume ce compte rendu et mets le résumé sur Telegram",
-      "true": "llm_telegram",
-      "pred": "llm"
-    },
-    {
       "prompt": "Fais un TL;DR de ce texte et envoie-le dans Telegram",
       "true": "llm_telegram",
-      "pred": "telegram_gmail"
-    },
-    {
-      "prompt": "Récupère https://api.coin.io/btc et envoie le résultat sur Telegram",
-      "true": "http_telegram",
-      "pred": "http_llm_telegram"
-    },
-    {
-      "prompt": "Appelle https://meteo.fr/api et poste la réponse dans mon Telegram",
-      "true": "http_telegram",
-      "pred": "http_cond_telegram"
-    },
-    {
-      "prompt": "Récupère https://api.coin.io/btc et envoie-le par mail à moi@ici.fr",
-      "true": "http_gmail",
-      "pred": "telegram_gmail"
-    },
-    {
-      "prompt": "Interroge https://meteo.fr/api puis mail le résultat à a@b.fr",
-      "true": "http_gmail",
-      "pred": "http_llm_gmail"
-    },
-    {
-      "prompt": "Télécharge https://site.fr/export.csv et envoie-le à compta@x.fr",
-      "true": "http_gmail",
-      "pred": "telegram_gmail"
-    },
-    {
-      "prompt": "Prends la page https://doc.io, condense-la avec Gemma et envoie sur Telegram",
-      "true": "http_llm_telegram",
-      "pred": "telegram_gmail"
+      "pred": "telegram"
     },
     {
       "prompt": "Teste https://shop.fr : en cas de 404 envoie une alerte Telegram",
       "true": "http_cond_telegram",
       "pred": "http_telegram"
-    },
-    {
-      "prompt": "Contrôle https://shop.fr et si 404 préviens support@shop.fr par courriel",
-      "true": "http_cond_gmail",
-      "pred": "http_gmail"
     }
   ],
   "env": {
