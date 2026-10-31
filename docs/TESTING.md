@@ -20,9 +20,12 @@ cd backend && pip install -r requirements.txt && python -m pytest -q
 | test_generate_without_llm_config_returns_503 | 503 | ✅ |
 | test_generate_mock_mode | mode démo | ✅ |
 
-## 3. Non exécuté / non vérifié
-- Frontend (`npm run dev`, build) : **non exécuté** dans cette session.
-- Parcours de bout en bout dans le navigateur : **non exécuté**.
+## 3. Parcours de bout en bout (vérifié le 2026-10-31)
+Backend `KERNEL_LLM_MOCK=1 uvicorn app.main:app` + `npm run dev`, piloté par Playwright (Chromium) :
+prompt → « Générer » → 3 blocs affichés → « Simuler » → journal « Simulation — réussie », blocs LLM et Telegram `simulé`, aucune erreur JS. Capture : [demo-screenshot.png](demo-screenshot.png).
+Limite : en mode mock, le workflow généré est toujours le même (il ne dépend pas du prompt).
+
+## 3bis. Non exécuté / non vérifié
 - Envoi réel Telegram/Gmail et appel à Gemma 4 réel : **non exécutés** (identifiants/modèle absents).
 
 ## 4. Protocole d'évaluation (composante scientifique, à faire)

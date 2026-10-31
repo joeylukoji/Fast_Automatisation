@@ -42,10 +42,10 @@ Chemin critique : T0 → F2-A → F3-A → F3-B → INT → DEMO. Parallèles d�
 | F1-A | F1 | Prompt + boucle de réparation | A8 | F2-A | ai/generator.py | generate() | test_generator_repairs / gives_up | ✅ Vérifié |
 | F1-B | F1 | `/api/generate`, 503, mock | A8 | F1-A | ai/llm.py, main.py (coord. A6a) | GenerateResponse | test_generate_503 / mock_mode | ✅ Vérifié |
 | F1-C | F1 | Gemma 4 réel | A8 | F1-B | — | — | génération réelle sur 5 prompts | ⬜ Non exécuté |
-| F2-B | F2 | Éditeur graphe + conversion + dagre | A7 | T0 | frontend/src/** | Workflow | aller-retour sans perte | 🟡 Codé, non vérifié ici |
-| F2-C | F2 | Formulaire de paramètres depuis JSON Schema | A7 | F2-B | NodePanel.jsx | NodeCatalogEntry | édition reflétée dans le JSON | 🟡 Codé, non vérifié ici |
-| F3-C | F3/F4 | Journal + confirmation exécution | A7 | F2-B | RunLog.jsx | RunResult | affichage des statuts | 🟡 Codé, non vérifié ici |
-| INT | toutes | Parcours de bout en bout | A9+A10 | tout | README.md | — | prompt → simulation en mode mock dans le navigateur | ⬜ À faire |
+| F2-B | F2 | Éditeur graphe + conversion + dagre | A7 | T0 | frontend/src/** | Workflow | aller-retour sans perte | ✅ Vérifié en E2E (affichage)  |
+| F2-C | F2 | Formulaire de paramètres depuis JSON Schema | A7 | F2-B | NodePanel.jsx | NodeCatalogEntry | édition reflétée dans le JSON | ✅ Vérifié en E2E (affichage)  |
+| F3-C | F3/F4 | Journal + confirmation exécution | A7 | F2-B | RunLog.jsx | RunResult | affichage des statuts | ✅ Vérifié en E2E (affichage)  |
+| INT | toutes | Parcours de bout en bout | A9+A10 | tout | README.md | — | prompt → simulation en mode mock dans le navigateur | ✅ Vérifié (Playwright) |
 | EXP | F1 | Harnais d'évaluation | A8 | F1-C | experiments/** | — | métriques §TESTING | ⬜ Facultatif |
 
 ## 5. Règles de conflit
