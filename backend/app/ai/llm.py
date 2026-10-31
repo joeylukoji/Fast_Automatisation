@@ -15,6 +15,7 @@ from __future__ import annotations
 import contextvars
 import json
 import os
+import re
 
 import httpx
 
@@ -89,10 +90,17 @@ def _remote(messages: list[dict], json_mode: bool) -> str:
     payload: dict = {"model": model, "messages": messages, "temperature": 0.2}
     if json_mode:
         payload["response_format"] = {"type": "json_object"}
+    url = f"{base_url.rstrip('/')}/chat/completions"
     try:
-        resp = httpx.post(f"{base_url.rstrip('/')}/chat/completions", json=payload, headers=headers, timeout=120)
+        resp = httpx.post(url, json=payload, headers=headers, timeout=120)
+        # Certains fournisseurs (Gemma via l'API Gemini) rejettent response_format : on réessaie sans.
+        if resp.status_code >= 400 and "response_format" in payload:
+            payload.pop("response_format")
+            resp = httpx.post(url, json=payload, headers=headers, timeout=120)
     except httpx.HTTPError as exc:
         raise LLMUnavailable(f"Fournisseur LLM injoignable : {exc}") from exc
     if resp.status_code >= 400:
         raise LLMUnavailable(f"Le fournisseur LLM a répondu {resp.status_code} : {resp.text[:300]}")
-    return resp.json()["choices"][0]["message"]["content"]
+    content = resp.json()["choices"][0]["message"]["content"]
+    # Gemma 4 peut préfixer sa réponse d'un bloc de raisonnement <thought>…</thought>.
+    return re.sub(r"<thought>.*?</thought>", "", content, flags=re.DOTALL).strip()
