@@ -8,7 +8,7 @@ export default function Taskbar({ wins, apps, activeKey, onClick, extra }) {
   useEffect(() => { const t = setInterval(() => setNow(new Date()), 15000); return () => clearInterval(t); }, []);
   return (
     <footer className="os-taskbar">
-      <a href="#/" className="os-start" title="Accueil Kernel"><span className="logo-mark" /></a>
+      <a href="#/" className="os-start" title="Accueil Fast Automatisation"><span className="logo-mark" /></a>
       <div className="os-tasks">
         {wins.map((w) => (
           <button key={w.key} className={`os-task ${activeKey === w.key ? 'active' : ''} ${w.minimized ? 'min' : ''}`} onClick={() => onClick(w)}>

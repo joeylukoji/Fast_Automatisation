@@ -12,7 +12,7 @@ from .ai.llm import LLMUnavailable
 from .nodes import catalogue
 from .schemas import GenerateRequest, GenerateResponse, RunRequest, RunResult, Workflow, WorkflowRecord
 
-app = FastAPI(title="Kernel API", version="0.2.0")
+app = FastAPI(title="Fast Automatisation API", version="0.2.0")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=os.getenv("KERNEL_CORS_ORIGINS", "http://localhost:5173,http://127.0.0.1:5173").split(","),

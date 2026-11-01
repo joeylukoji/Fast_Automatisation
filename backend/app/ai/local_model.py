@@ -53,7 +53,7 @@ def _params(block: str, prev: str | None, prompt: str) -> dict:
     if block == "telegram_send":
         return {"chat_id": chat, "text": src}
     if block == "gmail_send":
-        return {"to": email, "subject": "Notification Kernel", "body": src}
+        return {"to": email, "subject": "Notification Fast Automatisation", "body": src}
     raise ValueError(block)
 
 

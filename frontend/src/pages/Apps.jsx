@@ -34,7 +34,7 @@ function Bureau({ specs, onRegenerate, onReset }) {
   return (
     <Desktop apps={apps} launchers={LAUNCHERS} wm={wm} taskbarExtra={actions}>
       <div className="os-brand">
-        <span className="brand-name">{shop.name || 'Kernel'}</span>
+        <span className="brand-name">{shop.name || 'Fast Automatisation'}</span>
         <span className="serif-i">{shop.name ? [shop.city, shop.slogan].filter(Boolean).join(' — ') : 'Market — Kinshasa'}</span>
       </div>
     </Desktop>

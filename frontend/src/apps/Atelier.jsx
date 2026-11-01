@@ -96,6 +96,8 @@ export default function Atelier({ initialPrompt = '', onDeployed }) {
           <h1>Décrivez votre business, <span className="serif-i">Gemma prépare vos applications.</span></h1>
           <p className="muted">Caisse, clients, ventes et automatisation sont personnalisées par petites touches
             (≤ 120 lignes de spec par application), vérifiées avant déploiement.</p>
+          <p className="muted">Vos workflows se connectent à vos applications : chaque vente encaissée déclenche les workflows
+            du Studio qui contiennent le bloc « Nouvelle vente (ERP) » (facture, alerte, rapport…).</p>
         </header>
 
         {!builds && (
@@ -135,7 +137,10 @@ export default function Atelier({ initialPrompt = '', onDeployed }) {
             <div className="os-atelier-grid">
               {builds.map((b) => <BuildCard key={b.id ?? b.app} build={b} meta={BUILD_APPS.find((a) => a.app === b.app)} />)}
             </div>
+            <p className="muted small">Pour connecter un workflow à ces applications, ouvrez l'app Automatisation et
+              cliquez sur « Installer dans le Studio », ou ajoutez le bloc « Nouvelle vente (ERP) » à n'importe quel workflow du Studio.</p>
             <div className="os-actions">
+              <a className="btn ghost" href="#/studio"><Icon name="external" size={14} /> Connecter un workflow</a>
               <button className="btn dark" onClick={onDeployed}><Icon name="grid" size={14} /> Ouvrir le bureau</button>
               <button className="btn ghost" onClick={() => setBuilds(null)}>Modifier la description</button>
             </div>

@@ -1,4 +1,4 @@
-# Kernel
+# Fast Automatisation
 
 Plateforme d'automatisation : on décrit un besoin en langage naturel, Gemma 4 génère un workflow visuel que l'on peut modifier, simuler puis exécuter après validation.
 

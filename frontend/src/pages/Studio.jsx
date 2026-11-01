@@ -104,7 +104,7 @@ function Header() {
   const [confirm, setConfirm] = useState(false);
   return (
     <header className="k-header">
-      <a href="#/" className="brand"><span className="logo-mark" /> <span className="brand-name">Kernel</span></a>
+      <a href="#/" className="brand"><span className="logo-mark" /> <span className="brand-name">Fast Automatisation</span></a>
       <span className="k-sep" />
       <input className="k-name" value={name} onChange={(e) => rename(e.target.value)} aria-label="Nom du workflow" />
       <span className="mono muted small">{!workflowId ? 'non enregistré' : dirty ? 'modifié' : 'enregistré'}</span>

@@ -72,7 +72,7 @@ function EnginePanel() {
   const live = health && health.status === 'ok';
   return (
     <aside className="glass engine fade" style={{ animationDelay: '.5s' }}>
-      <header><span className="serif-i">Moteur Kernel</span></header>
+      <header><span className="serif-i">Moteur Fast Automatisation</span></header>
       <div className="engine-body">
         <div className="engine-row"><span>GÉNÉRATEUR</span><span>{live ? SOURCE[health.generator] ?? 'non configuré' : '—'}</span></div>
         <div className="engine-row"><span>SECOURS</span><span>{live && health.fallback ? 'modèle local' : '—'}</span></div>
@@ -124,7 +124,7 @@ export default function Landing() {
 
       <nav className={`glass nav ${scrolled ? 'compact' : ''}`}>
         <div className="wrap nav-in">
-          <a href="#/" className="brand"><span className="logo-mark" /><span className="brand-name">Kernel</span></a>
+          <a href="#/" className="brand"><span className="logo-mark" /><span className="brand-name">Fast Automatisation</span></a>
           <div className="nav-links">
             <button onClick={() => go('projet')}>Le projet</button>
             <button onClick={() => go('fonctionnement')}>Fonctionnement</button>
@@ -142,9 +142,9 @@ export default function Landing() {
         <section className="wrap hero">
           <div className="hero-text fade" style={{ animationDelay: '.2s' }}>
             <div className="eyebrow-line"><span /><em>AUTOMATISATION — LANGAGE NATUREL</em></div>
-            <h1 className="display">Décrivez-le.<br /><span className="serif-i light">Kernel l'automatise.</span></h1>
+            <h1 className="display">Décrivez-le.<br /><span className="serif-i light">Fast Automatisation l'automatise.</span></h1>
             <p className="lead">
-              Kernel transforme une phrase en workflow visuel : Gemma 4 le génère, le moteur le vérifie et le répare,
+              Fast Automatisation transforme une phrase en workflow visuel : Gemma 4 le génère, le moteur le vérifie et le répare,
               vous l'ajustez dans l'éditeur, le simulez sans risque, puis l'exécutez seulement après votre accord.
             </p>
             <div className="cta-row">
@@ -153,7 +153,7 @@ export default function Landing() {
               <button className="serif-i link-muted" onClick={() => go('fonctionnement')}>Comment ça marche</button>
             </div>
             <div className="meta mono">
-              <span>PROJET : KERNEL — HACKATHON</span>
+              <span>PROJET : FAST AUTOMATISATION — HACKTOBERFEST</span>
               <span>STACK : FASTAPI · REACT FLOW · GEMMA 4</span>
             </div>
           </div>
@@ -176,14 +176,14 @@ export default function Landing() {
               </div>
               <div className="vs-mid"><span>VS</span></div>
               <div className="vs-col new">
-                <h3 className="serif-i">« Avec Kernel »</h3>
+                <h3 className="serif-i">« Avec Fast Automatisation »</h3>
                 <div className="vs-grid rust">
                   <span><Icon name="llm" size={22} /> UNE PHRASE</span>
                   <span><Icon name="check" size={22} /> WORKFLOW VALIDE</span>
                   <span><Icon name="flask" size={22} /> SIMULATION SANS RISQUE</span>
                   <span><Icon name="play" size={22} /> EXÉCUTION APPROUVÉE</span>
                 </div>
-                <p>Vous décrivez le besoin. Kernel produit un graphe vérifié que vous voyez, modifiez et testez avant qu'il n'agisse sur le monde réel.</p>
+                <p>Vous décrivez le besoin. Fast Automatisation produit un graphe vérifié que vous voyez, modifiez et testez avant qu'il n'agisse sur le monde réel.</p>
               </div>
             </div>
           </div>
@@ -194,7 +194,7 @@ export default function Landing() {
           <div className="two">
             <h2 className="display md">Une phrase.<br /><span className="serif-i muted-ink">Un workflow vérifié.</span></h2>
             <p className="lead lg">
-              Le modèle ne produit jamais directement une action : il propose un graphe au format Kernel. Chaque proposition
+              Le modèle ne produit jamais directement une action : il propose un graphe au format Fast Automatisation. Chaque proposition
               passe par le moteur de validation ; en cas d'erreur, les messages sont renvoyés au modèle pour qu'il corrige
               (jusqu'à deux réparations). Ce qui arrive dans l'éditeur est donc toujours exécutable.
             </p>
